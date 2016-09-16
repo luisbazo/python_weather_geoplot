@@ -22,20 +22,21 @@ for index, row in df.iterrows():
   loc_city = str(df.loc[index,"city"]) + "," + str(df.loc[index,"country"])
 
   iterate = True
-  while (iterate):
+  counter = 0
+  while (iterate and counter < 5):
     try:
-        global location,w,observation
+        print "Retrieving information of city " + loc_city
         location = geolocator.geocode(df.loc[index,"city"])
         observation = owm.weather_at_coords(location.latitude,location.longitude)
         w = observation.get_weather()
+        jsonweather = w.to_JSON()
+        jsonloads = json.loads(jsonweather)
+        temp = jsonloads["temperature"]["temp"] - 273.15
+        text = loc_city + ' Temperature ' + str(temp) + ' Status '  + str(jsonloads['detailed_status'])
+        gmap.marker(location.latitude, location.longitude, "blue",title=text)
         iterate = False
     except:
         iterate = True
-
-  jsonweather = w.to_JSON()
-  jsonloads = json.loads(jsonweather)
-  temp = jsonloads["temperature"]["temp"] - 273.15
-  text = loc_city + ' Temperature ' + str(temp) + ' Status '  + str(jsonloads['detailed_status'])
-  gmap.marker(location.latitude, location.longitude, "blue",title=text)
+        counter = counter + 1
 
 gmap.draw("index.html")
