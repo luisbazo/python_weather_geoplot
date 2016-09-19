@@ -48,6 +48,6 @@ Prerequisites
 
   Extensions
 
-  gmplot library could be extended to support more marker icons, labels, formats, etc.
+  gmplot library could be extended to support improved icons, labels, formats, etc.
   More weather data could be included in the map. Different kinds of maps and formats could be used.  
   In combination with nosql databases, weather data could be stored and analyzed to be displayed in the map.  

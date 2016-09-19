@@ -1,4 +1,4 @@
-import gmplot
+import gmplotopenweather as gmplot
 import pandas as pd
 import pyowm
 import json
@@ -33,7 +33,7 @@ for index, row in df.iterrows():
         jsonloads = json.loads(jsonweather)
         temp = jsonloads["temperature"]["temp"] - 273.15
         text = loc_city + ' Temperature ' + str(temp) + ' Status '  + str(jsonloads['detailed_status'])
-        gmap.marker(location.latitude, location.longitude, "blue",title=text)
+        gmap.marker(location.latitude, location.longitude, str(jsonloads['detailed_status']) ,title=text)
         iterate = False
     except:
         iterate = True
