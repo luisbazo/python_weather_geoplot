@@ -6,7 +6,7 @@ Library gmplot has been extended,
   -It has been added support to weather icons from open weather
   -It has been added the google API key on map draw which has been recently declared mandatory by Google to generate the map if the map is served from a public web domain.
 
-You can see a map example generated on
+You can see a map example generated on https://luisbazo.github.io/python_weather_geoplot/
 
 The project is composed with 3 files
 
