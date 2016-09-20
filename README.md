@@ -1,18 +1,26 @@
 # python_weather_plotly
-This is an example of python program that reads a list of cities from a csv file and it plots temperature data in a map
+
+This is an example of python program that reads a list of cities from a csv file and it plots weather data retrieve from Open Weather Site (https://openweathermap.org) in a google map. The html containing the map can be published in a web server (Ex. Apache Web Server) to be accessed externally. The program receives two parameters. One key API to get access to open weather data and another key API to get access to google maps. Both keys could be obtained for free. Look at the python program help to get information of how to obtain API keys needed to run the program.
+
+Library gmplot has been extended,
+  -It has been added support to weather icons from open weather
+  -It has been added the google API key on map draw which has been recently declared mandatory by Google to generate the map if the map is served from a public web domain.
+
+You can see a map example generated on
 
 The project is composed with 3 files
 
 1. weatherMap.py: Python script to get weather data from a list of cities. Once data has been gathered it plots on a google map
 
-  python weatherMap.py -o 1 -a xxxxxxxxxxxxx
+Usage: weatherMap.py [options]
 
-  Usage: weatherMap.py [options]
-
-  Options:
-
-                    -h, --help            show this help message and exit
-                    -a API, --api=API     api key to get access to openweather
+Options:
+-h, --help            show this help message and exit
+-w API, --apiopenweather=API
+                      api key to get access to openweather
+                      http://openweathermap.org/appid
+-m APIGOOGLEMAPS, --apigooglemaps=APIGOOGLEMAPS
+                      api key to get access to googlemap https://developers.google.com/maps/documentation/javascript/get-api-key
 
 Once executed the map is automatically generated in a file called index.html under the script folder.
 

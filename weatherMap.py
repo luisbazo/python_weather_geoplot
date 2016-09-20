@@ -7,10 +7,12 @@ from optparse import OptionParser
 from geopy.geocoders import Nominatim
 
 parser = OptionParser()
-parser.add_option("-a", "--api", dest="api",help="api key to get access to openweather")
+parser.add_option("-w", "--apiopenweather", dest="api",help="api key to get access to openweather http://openweathermap.org/appid")
+parser.add_option("-m", "--apigooglemaps", dest="apigooglemaps",help="api key to get access to googlemap https://developers.google.com/maps/documentation/javascript/get-api-key")
 
 (opts, args) = parser.parse_args()
 api=opts.api
+apigooglemaps=opts.apigooglemaps
 
 geolocator = Nominatim()
 gmap = gmplot.GoogleMapPlotter(0, 0, 2)
@@ -39,4 +41,4 @@ for index, row in df.iterrows():
         iterate = True
         counter = counter + 1
 
-gmap.draw("index.html")
+gmap.draw(apigooglemaps,"index.html")
