@@ -15,11 +15,12 @@ The project is composed with 3 files
 Usage: weatherMap.py [options]
 
 Options:
--h, --help            show this help message and exit
--w API, --apiopenweather=API
-                      api key to get access to openweather
-                      http://openweathermap.org/appid
--m APIGOOGLEMAPS, --apigooglemaps=APIGOOGLEMAPS
+    -h, --help            show this help message and exit
+
+    -w API, --apiopenweather=API
+                      api key to get access to openweather http://openweathermap.org/appid
+
+    -m APIGOOGLEMAPS, --apigooglemaps=APIGOOGLEMAPS
                       api key to get access to googlemap https://developers.google.com/maps/documentation/javascript/get-api-key
 
 Once executed the map is automatically generated in a file called index.html under the script folder.
