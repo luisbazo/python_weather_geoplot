@@ -17,7 +17,7 @@ Usage: weatherMap.py [options]
 Options:
     -h, --help            show this help message and exit
 
-    -w API, --apiopenweather=API
+    -w APIOPENWEATHER, --apiopenweather=API
                       api key to get access to openweather http://openweathermap.org/appid
 
     -m APIGOOGLEMAPS, --apigooglemaps=APIGOOGLEMAPS

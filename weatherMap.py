@@ -7,11 +7,11 @@ from optparse import OptionParser
 from geopy.geocoders import Nominatim
 
 parser = OptionParser()
-parser.add_option("-w", "--apiopenweather", dest="api",help="api key to get access to openweather http://openweathermap.org/appid")
+parser.add_option("-w", "--apiopenweather", dest="apiopenweather",help="api key to get access to openweather http://openweathermap.org/appid")
 parser.add_option("-m", "--apigooglemaps", dest="apigooglemaps",help="api key to get access to googlemap https://developers.google.com/maps/documentation/javascript/get-api-key")
 
 (opts, args) = parser.parse_args()
-api=opts.api
+api=opts.apiopenweather
 apigooglemaps=opts.apigooglemaps
 
 geolocator = Nominatim()
