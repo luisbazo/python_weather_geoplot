@@ -14,20 +14,19 @@
 		};
 		var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
 
-<<<<<<< HEAD
 		var latlng = new google.maps.LatLng(40.416775, -3.703790);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Madrid,Es Temperature 23.346 Status clear sky",
+		title: "Madrid,Es Temperature 14.262 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(51.507351, -0.127758);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/02d.png');
 		var marker = new google.maps.Marker({
-		title: "London,Uk Temperature 17.346 Status clear sky",
+		title: "London,Uk Temperature 15.24 Status few clouds",
 		icon: img,
 		position: latlng
 		});
@@ -36,7 +35,25 @@
 		var latlng = new google.maps.LatLng(38.722252, -9.139337);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Lisbon,Pt Temperature 20.046 Status clear sky",
+		title: "Lisbon,Pt Temperature 15.475 Status clear sky",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(41.621488, -72.745652);
+		var img = new google.maps.MarkerImage('markers/01d.png');
+		var marker = new google.maps.Marker({
+		title: "Berlin,Ge Temperature 19.225 Status clear sky",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(33.660939, -95.555513);
+		var img = new google.maps.MarkerImage('markers/10d.png');
+		var marker = new google.maps.Marker({
+		title: "Paris,Fr Temperature 25.125 Status light rain",
 		icon: img,
 		position: latlng
 		});
@@ -45,16 +62,25 @@
 		var latlng = new google.maps.LatLng(40.970104, -5.663540);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Salamanca,Es Temperature 18.896 Status clear sky",
+		title: "Salamanca,Es Temperature 18.33 Status clear sky",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(42.040529, 2.505289);
+		var img = new google.maps.MarkerImage('markers/01d.png');
+		var marker = new google.maps.Marker({
+		title: "Susqueda,Es Temperature 11.225 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(41.979400, 2.821426);
-		var img = new google.maps.MarkerImage('markers/02d.png');
+		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Girona,Es Temperature 21.696 Status few clouds",
+		title: "Girona,Es Temperature 17.21 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -63,25 +89,25 @@
 		var latlng = new google.maps.LatLng(34.555349, 69.207486);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Kabul,nan Temperature 4.746 Status clear sky",
+		title: "Kabul,nan Temperature 4.762 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(60.097094, 19.934834);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/02d.png');
 		var marker = new google.maps.Marker({
-		title: "Mariehamn,nan Temperature 12.846 Status clear sky",
+		title: "Mariehamn,nan Temperature 12.362 Status few clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(41.327546, 19.818698);
-		var img = new google.maps.MarkerImage('markers/10d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Tirana,nan Temperature 14.196 Status light rain",
+		title: "Tirana,nan Temperature 13.225 Status scattered clouds",
 		icon: img,
 		position: latlng
 		});
@@ -90,7 +116,7 @@
 		var latlng = new google.maps.LatLng(36.753770, 3.058793);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Algiers,nan Temperature 22.146 Status clear sky",
+		title: "Algiers,nan Temperature 14.075 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -99,7 +125,7 @@
 		var latlng = new google.maps.LatLng(-14.275632, -170.702036);
 		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Pago Pago,nan Temperature 27.846 Status overcast clouds",
+		title: "Pago Pago,nan Temperature 27.412 Status overcast clouds",
 		icon: img,
 		position: latlng
 		});
@@ -108,7 +134,7 @@
 		var latlng = new google.maps.LatLng(42.506317, 1.521835);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Andorra la Vella,nan Temperature 12.296 Status clear sky",
+		title: "Andorra la Vella,nan Temperature 16.22 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -117,52 +143,88 @@
 		var latlng = new google.maps.LatLng(-8.839988, 13.289437);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Luanda,nan Temperature 22.796 Status clear sky",
+		title: "Luanda,nan Temperature 21.062 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(41.493625, -98.924534);
-		var img = new google.maps.MarkerImage('markers/03d.png');
+		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "The Valley,nan Temperature 29.846 Status overcast clouds",
+		title: "The Valley,nan Temperature 31.512 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(17.127410, -61.846772);
-		var img = new google.maps.MarkerImage('markers/10d.png');
+		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "Saint John’s,nan Temperature 27.746 Status light rain",
+		title: "Saint John’s,nan Temperature 28.675 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(-34.603684, -58.381559);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Buenos Aires,nan Temperature 20.246 Status clear sky",
+		title: "Buenos Aires,nan Temperature 14.975 Status overcast clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(40.179186, 44.499103);
-		var img = new google.maps.MarkerImage('markers/10d.png');
+		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Yerevan,nan Temperature 9.946 Status light rain",
+		title: "Yerevan,nan Temperature 8.562 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(12.509204, -70.008631);
+		var img = new google.maps.MarkerImage('markers/01d.png');
+		var marker = new google.maps.Marker({
+		title: "Oranjestad,nan Temperature 29.125 Status clear sky",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-35.280937, 149.130009);
+		var img = new google.maps.MarkerImage('markers/10d.png');
+		var marker = new google.maps.Marker({
+		title: "Canberra,nan Temperature 7.512 Status light rain",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(38.901223, -77.265260);
 		var img = new google.maps.MarkerImage('markers/02d.png');
 		var marker = new google.maps.Marker({
-		title: "Oranjestad,nan Temperature 29.646 Status few clouds",
+		title: "Vienna,nan Temperature 25.025 Status few clouds",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(40.409262, 49.867092);
+		var img = new google.maps.MarkerImage('markers/03d.png');
+		var marker = new google.maps.Marker({
+		title: "Baku,nan Temperature 21.675 Status overcast clouds",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(25.047984, -77.355413);
+		var img = new google.maps.MarkerImage('markers/03d.png');
+		var marker = new google.maps.Marker({
+		title: "Nassau,nan Temperature 29.912 Status scattered clouds",
 		icon: img,
 		position: latlng
 		});
@@ -171,25 +233,25 @@
 		var latlng = new google.maps.LatLng(26.228516, 50.586050);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Manama,nan Temperature 32.896 Status clear sky",
+		title: "Manama,nan Temperature 30.325 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(23.810332, 90.412518);
-		var img = new google.maps.MarkerImage('markers/04d.png');
+		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Dhaka,nan Temperature 25.446 Status broken clouds",
+		title: "Dhaka,nan Temperature 25.625 Status light rain",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(45.523062, -122.676482);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/02d.png');
 		var marker = new google.maps.Marker({
-		title: "Bridgetown,nan Temperature 15.296 Status clear sky",
+		title: "Bridgetown,nan Temperature 24.975 Status few clouds",
 		icon: img,
 		position: latlng
 		});
@@ -198,7 +260,7 @@
 		var latlng = new google.maps.LatLng(53.904540, 27.561524);
 		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Minsk,nan Temperature 8.996 Status light rain",
+		title: "Minsk,nan Temperature 7.78 Status light rain",
 		icon: img,
 		position: latlng
 		});
@@ -207,34 +269,43 @@
 		var latlng = new google.maps.LatLng(50.850340, 4.351710);
 		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "Brussels,nan Temperature 18.896 Status broken clouds",
+		title: "Brussels,nan Temperature 13.41 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
-		var latlng = new google.maps.LatLng(0.000000, 0.000000);
-		var img = new google.maps.MarkerImage('markers/03d.png');
+		var latlng = new google.maps.LatLng(17.251011, -88.759020);
+		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Belmopan,nan Temperature 25.196 Status scattered clouds",
+		title: "Belmopan,nan Temperature 27.062 Status moderate rain",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
-		var latlng = new google.maps.LatLng(0.000000, 0.000000);
-		var img = new google.maps.MarkerImage('markers/03d.png');
+		var latlng = new google.maps.LatLng(6.496857, 2.628852);
+		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "Porto-Novo,nan Temperature 25.196 Status scattered clouds",
+		title: "Porto-Novo,nan Temperature 25.162 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(43.250021, -79.866091);
+		var img = new google.maps.MarkerImage('markers/02d.png');
+		var marker = new google.maps.Marker({
+		title: "Hamilton,nan Temperature 27.04 Status few clouds",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(27.472792, 89.639286);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Hamilton,nan Temperature 25.596 Status clear sky",
+		title: "Thimphu,nan Temperature 2.975 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -243,16 +314,16 @@
 		var latlng = new google.maps.LatLng(-16.489689, -68.119294);
 		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "La Paz,nan Temperature 14.146 Status light rain",
+		title: "La Paz,nan Temperature 4.175 Status light rain",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(43.856259, 18.413076);
-		var img = new google.maps.MarkerImage('markers/03d.png');
+		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "Sarajevo,nan Temperature 8.896 Status scattered clouds",
+		title: "Sarajevo,nan Temperature 6.262 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
@@ -261,25 +332,25 @@
 		var latlng = new google.maps.LatLng(-24.628208, 25.923147);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Gaborone,nan Temperature 17.146 Status clear sky",
+		title: "Gaborone,nan Temperature 12.262 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(-14.235004, -51.925280);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/02d.png');
 		var marker = new google.maps.Marker({
-		title: "Brasilia,nan Temperature 35.396 Status clear sky",
+		title: "Brasilia,nan Temperature 33.612 Status few clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(-7.319500, 72.422856);
-		var img = new google.maps.MarkerImage('markers/04d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Diego Garcia,nan Temperature 28.746 Status broken clouds",
+		title: "Diego Garcia,nan Temperature 28.612 Status overcast clouds",
 		icon: img,
 		position: latlng
 		});
@@ -288,16 +359,16 @@
 		var latlng = new google.maps.LatLng(18.428611, -64.618466);
 		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Road Town,nan Temperature 28.746 Status scattered clouds",
+		title: "Road Town,nan Temperature 28.525 Status overcast clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(4.903052, 114.939821);
-		var img = new google.maps.MarkerImage('markers/04d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Bandar Seri Begawan,nan Temperature 24.046 Status broken clouds",
+		title: "Bandar Seri Begawan,nan Temperature 25.175 Status scattered clouds",
 		icon: img,
 		position: latlng
 		});
@@ -306,7 +377,7 @@
 		var latlng = new google.maps.LatLng(42.697708, 23.321867);
 		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Sofia,nan Temperature 10.896 Status light rain",
+		title: "Sofia,nan Temperature 8.412 Status light rain",
 		icon: img,
 		position: latlng
 		});
@@ -315,16 +386,16 @@
 		var latlng = new google.maps.LatLng(12.371428, -1.519660);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Ouagadougou,nan Temperature 30.846 Status clear sky",
+		title: "Ouagadougou,nan Temperature 23.475 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(-3.361378, 29.359878);
-		var img = new google.maps.MarkerImage('markers/03d.png');
+		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "Bujumbura,nan Temperature 19.746 Status scattered clouds",
+		title: "Bujumbura,nan Temperature 17.662 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
@@ -333,43 +404,43 @@
 		var latlng = new google.maps.LatLng(11.544873, 104.892167);
 		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Phnom Penh,nan Temperature 23.596 Status moderate rain",
+		title: "Phnom Penh,nan Temperature 22.962 Status moderate rain",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(3.848032, 11.502075);
-		var img = new google.maps.MarkerImage('markers/03d.png');
+		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "Yaounde,nan Temperature 23.746 Status overcast clouds",
+		title: "Yaounde,nan Temperature 22.562 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(38.615768, -95.268637);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Ottawa,nan Temperature 31.396 Status clear sky",
+		title: "Ottawa,nan Temperature 31.85 Status scattered clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(14.933050, -23.513327);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Praia,nan Temperature 28.446 Status clear sky",
+		title: "Praia,nan Temperature 24.675 Status heavy intensity rain",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(5.414921, 100.329761);
-		var img = new google.maps.MarkerImage('markers/04d.png');
+		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "George Town,nan Temperature 28.446 Status broken clouds",
+		title: "George Town,nan Temperature 28.625 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -378,25 +449,34 @@
 		var latlng = new google.maps.LatLng(5.630556, 21.640659);
 		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Bangui,nan Temperature 22.196 Status scattered clouds",
+		title: "Bangui,nan Temperature 20.975 Status scattered clouds",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.134846, 15.055741);
+		var img = new google.maps.MarkerImage('markers/02d.png');
+		var marker = new google.maps.Marker({
+		title: "N’Djamena,nan Temperature 24.675 Status few clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(42.878213, -8.544844);
-		var img = new google.maps.MarkerImage('markers/03d.png');
+		var img = new google.maps.MarkerImage('markers/02d.png');
 		var marker = new google.maps.Marker({
-		title: "Santiago,nan Temperature 18.946 Status scattered clouds",
+		title: "Santiago,nan Temperature 12.725 Status few clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(39.904211, 116.407395);
-		var img = new google.maps.MarkerImage('markers/04d.png');
+		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Beijing,nan Temperature 16.646 Status broken clouds",
+		title: "Beijing,nan Temperature 16.775 Status light rain",
 		icon: img,
 		position: latlng
 		});
@@ -405,25 +485,25 @@
 		var latlng = new google.maps.LatLng(18.719444, -64.317933);
 		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "The Settlement,nan Temperature 28.846 Status broken clouds",
+		title: "The Settlement,nan Temperature 28.662 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(64.770434, -21.534129);
-		var img = new google.maps.MarkerImage('markers/03d.png');
+		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "West Island,nan Temperature 6.246 Status overcast clouds",
+		title: "West Island,nan Temperature 5.262 Status light rain",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(4.710989, -74.072092);
-		var img = new google.maps.MarkerImage('markers/10d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Bogota,nan Temperature 16.846 Status light rain",
+		title: "Bogota,nan Temperature 17.812 Status scattered clouds",
 		icon: img,
 		position: latlng
 		});
@@ -432,43 +512,61 @@
 		var latlng = new google.maps.LatLng(-11.717216, 43.247315);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Moroni,nan Temperature 24.996 Status clear sky",
+		title: "Moroni,nan Temperature 24.562 Status clear sky",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-21.212901, -159.782306);
+		var img = new google.maps.MarkerImage('markers/03d.png');
+		var marker = new google.maps.Marker({
+		title: "Avarua,nan Temperature 23.325 Status overcast clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(40.305598, -89.602883);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/02d.png');
 		var marker = new google.maps.Marker({
-		title: "San Jose,nan Temperature 30.646 Status clear sky",
+		title: "San Jose,nan Temperature 23.075 Status few clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(6.827623, -5.289343);
-		var img = new google.maps.MarkerImage('markers/10d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Yamoussoukro,nan Temperature 26.246 Status light rain",
+		title: "Yamoussoukro,nan Temperature 23.462 Status scattered clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(45.815011, 15.981919);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "Zagreb,nan Temperature 12.246 Status clear sky",
+		title: "Zagreb,nan Temperature 16.425 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(23.113592, -82.366596);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/02d.png');
 		var marker = new google.maps.Marker({
-		title: "Havana,nan Temperature 30.196 Status clear sky",
+		title: "Havana,nan Temperature 30.362 Status few clouds",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(51.691947, 4.437907);
+		var img = new google.maps.MarkerImage('markers/10d.png');
+		var marker = new google.maps.Marker({
+		title: "Willemstad,nan Temperature 14.375 Status light rain",
 		icon: img,
 		position: latlng
 		});
@@ -477,16 +575,16 @@
 		var latlng = new google.maps.LatLng(35.185566, 33.382276);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Nicosia,nan Temperature 25.746 Status clear sky",
+		title: "Nicosia,nan Temperature 24.562 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(50.075538, 14.437800);
-		var img = new google.maps.MarkerImage('markers/03d.png');
+		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Prague,nan Temperature 12.996 Status scattered clouds",
+		title: "Prague,nan Temperature 14.175 Status light rain",
 		icon: img,
 		position: latlng
 		});
@@ -495,25 +593,25 @@
 		var latlng = new google.maps.LatLng(-4.441931, 15.266293);
 		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Kinshasa,nan Temperature 26.896 Status light rain",
+		title: "Kinshasa,nan Temperature 24.362 Status moderate rain",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(55.676097, 12.568337);
-		var img = new google.maps.MarkerImage('markers/04d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Copenhagen,nan Temperature 15.346 Status broken clouds",
+		title: "Copenhagen,nan Temperature 13.125 Status scattered clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(11.825138, 42.590275);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Djibouti,nan Temperature 23.846 Status clear sky",
+		title: "Djibouti,nan Temperature 22.175 Status scattered clouds",
 		icon: img,
 		position: latlng
 		});
@@ -522,16 +620,16 @@
 		var latlng = new google.maps.LatLng(15.309168, -61.379355);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Roseau,nan Temperature 30.246 Status clear sky",
+		title: "Roseau,nan Temperature 30.262 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(18.486058, -69.931212);
-		var img = new google.maps.MarkerImage('markers/03d.png');
+		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "Santo Domingo,nan Temperature 28.046 Status scattered clouds",
+		title: "Santo Domingo,nan Temperature 27.462 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
@@ -540,7 +638,7 @@
 		var latlng = new google.maps.LatLng(-0.180653, -78.467838);
 		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Quito,nan Temperature 18.746 Status light rain",
+		title: "Quito,nan Temperature 15.662 Status moderate rain",
 		icon: img,
 		position: latlng
 		});
@@ -549,7 +647,7 @@
 		var latlng = new google.maps.LatLng(30.044420, 31.235712);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Cairo,nan Temperature 26.696 Status clear sky",
+		title: "Cairo,nan Temperature 23.312 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -558,7 +656,7 @@
 		var latlng = new google.maps.LatLng(13.692940, -89.218191);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "San Salvador,nan Temperature 29.046 Status clear sky",
+		title: "San Salvador,nan Temperature 31.67 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -567,7 +665,7 @@
 		var latlng = new google.maps.LatLng(3.750412, 8.737104);
 		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "Malabo,nan Temperature 24.896 Status broken clouds",
+		title: "Malabo,nan Temperature 24.912 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
@@ -576,16 +674,16 @@
 		var latlng = new google.maps.LatLng(15.322877, 38.925052);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Asmara,nan Temperature 19.796 Status clear sky",
+		title: "Asmara,nan Temperature 18.725 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(59.436961, 24.753575);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Tallinn,nan Temperature 10.396 Status clear sky",
+		title: "Tallinn,nan Temperature 10.725 Status light rain",
 		icon: img,
 		position: latlng
 		});
@@ -594,7 +692,7 @@
 		var latlng = new google.maps.LatLng(8.980603, 38.757761);
 		var img = new google.maps.MarkerImage('markers/02d.png');
 		var marker = new google.maps.Marker({
-		title: "Addis Ababa,nan Temperature 10.246 Status few clouds",
+		title: "Addis Ababa,nan Temperature 10.575 Status few clouds",
 		icon: img,
 		position: latlng
 		});
@@ -603,7 +701,7 @@
 		var latlng = new google.maps.LatLng(44.959966, -90.937085);
 		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Stanley,nan Temperature 21.996 Status light rain",
+		title: "Stanley,nan Temperature 18.33 Status light rain",
 		icon: img,
 		position: latlng
 		});
@@ -612,7 +710,7 @@
 		var latlng = new google.maps.LatLng(62.007864, -6.790982);
 		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Torshavn,nan Temperature 11.246 Status light rain",
+		title: "Torshavn,nan Temperature 11.112 Status light rain",
 		icon: img,
 		position: latlng
 		});
@@ -621,7 +719,7 @@
 		var latlng = new google.maps.LatLng(6.914712, 158.161027);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Palikir,nan Temperature 29.346 Status clear sky",
+		title: "Palikir,nan Temperature 29.562 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -630,7 +728,7 @@
 		var latlng = new google.maps.LatLng(-18.124809, 178.450079);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Suva,nan Temperature 17.346 Status clear sky",
+		title: "Suva,nan Temperature 24.662 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -639,16 +737,25 @@
 		var latlng = new google.maps.LatLng(60.169856, 24.938379);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Helsinki,nan Temperature 13.896 Status clear sky",
+		title: "Helsinki,nan Temperature 12.812 Status clear sky",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(33.660939, -95.555513);
+		var img = new google.maps.MarkerImage('markers/01d.png');
+		var marker = new google.maps.Marker({
+		title: "Paris,nan Temperature 33.912 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(-17.551625, -149.558476);
-		var img = new google.maps.MarkerImage('markers/04d.png');
+		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Papeete,nan Temperature 26.196 Status broken clouds",
+		title: "Papeete,nan Temperature 26.762 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -657,34 +764,43 @@
 		var latlng = new google.maps.LatLng(-49.349642, 70.218004);
 		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Port-aux-Français,nan Temperature 6.046 Status light rain",
+		title: "Port-aux-Français,nan Temperature 2.212 Status light rain",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
-		var latlng = new google.maps.LatLng(0.000000, 0.000000);
-		var img = new google.maps.MarkerImage('markers/03d.png');
+		var latlng = new google.maps.LatLng(0.416198, 9.467268);
+		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "Libreville,nan Temperature 25.196 Status scattered clouds",
+		title: "Libreville,nan Temperature 24.062 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(41.715138, 44.827096);
-		var img = new google.maps.MarkerImage('markers/10d.png');
+		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Tbilisi,nan Temperature 12.846 Status moderate rain",
+		title: "Tbilisi,nan Temperature 11.262 Status clear sky",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(41.621488, -72.745652);
+		var img = new google.maps.MarkerImage('markers/01d.png');
+		var marker = new google.maps.Marker({
+		title: "Berlin,nan Temperature 19.225 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(5.603717, -0.186964);
-		var img = new google.maps.MarkerImage('markers/03d.png');
+		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Accra,nan Temperature 25.846 Status scattered clouds",
+		title: "Accra,nan Temperature 24.575 Status light rain",
 		icon: img,
 		position: latlng
 		});
@@ -693,7 +809,7 @@
 		var latlng = new google.maps.LatLng(36.140751, -5.353585);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Gibraltar,nan Temperature 22.646 Status clear sky",
+		title: "Gibraltar,nan Temperature 19.762 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -702,7 +818,7 @@
 		var latlng = new google.maps.LatLng(32.204873, -95.855521);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Athens,nan Temperature 32.546 Status clear sky",
+		title: "Athens,nan Temperature 33.712 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -711,7 +827,7 @@
 		var latlng = new google.maps.LatLng(64.181410, -51.694138);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Nuuk,nan Temperature 4.796 Status clear sky",
+		title: "Nuuk,nan Temperature 3.062 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -720,7 +836,7 @@
 		var latlng = new google.maps.LatLng(37.096528, -113.568416);
 		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Saint George’s,nan Temperature 14.446 Status moderate rain",
+		title: "Saint George’s,nan Temperature 15.162 Status moderate rain",
 		icon: img,
 		position: latlng
 		});
@@ -729,43 +845,43 @@
 		var latlng = new google.maps.LatLng(13.476282, 144.750223);
 		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Hagatna,nan Temperature 27.896 Status light rain",
+		title: "Hagatna,nan Temperature 25.712 Status moderate rain",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(14.634915, -90.506882);
-		var img = new google.maps.MarkerImage('markers/10d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Guatemala City,nan Temperature 25.346 Status light rain",
+		title: "Guatemala City,nan Temperature 22.225 Status scattered clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(46.775846, -56.180636);
-		var img = new google.maps.MarkerImage('markers/10d.png');
+		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Saint Peter Port,nan Temperature 14.246 Status light rain",
+		title: "Saint Peter Port,nan Temperature 16.67 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(9.641185, -13.578401);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Conakry,nan Temperature 26.996 Status clear sky",
+		title: "Conakry,nan Temperature 26.562 Status scattered clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(11.881655, -15.617794);
-		var img = new google.maps.MarkerImage('markers/02d.png');
+		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Bissau,nan Temperature 28.396 Status few clouds",
+		title: "Bissau,nan Temperature 26.062 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -774,61 +890,61 @@
 		var latlng = new google.maps.LatLng(38.209797, -84.558831);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Georgetown,nan Temperature 30.396 Status clear sky",
+		title: "Georgetown,nan Temperature 32.78 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(18.594395, -72.307433);
-		var img = new google.maps.MarkerImage('markers/02d.png');
+		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Port-au-Prince,nan Temperature 27.396 Status few clouds",
+		title: "Port-au-Prince,nan Temperature 25.062 Status moderate rain",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(15.133333, -87.466667);
-		var img = new google.maps.MarkerImage('markers/02d.png');
+		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "Tegucigalpa,nan Temperature 26.246 Status few clouds",
+		title: "Tegucigalpa,nan Temperature 26.662 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(47.497912, 19.040235);
-		var img = new google.maps.MarkerImage('markers/02d.png');
+		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Budapest,nan Temperature 11.846 Status few clouds",
+		title: "Budapest,nan Temperature 14.075 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(64.126521, -21.817439);
-		var img = new google.maps.MarkerImage('markers/03d.png');
+		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Reykjavik,nan Temperature 7.246 Status overcast clouds",
+		title: "Reykjavik,nan Temperature 6.062 Status light rain",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(28.613939, 77.209021);
-		var img = new google.maps.MarkerImage('markers/02d.png');
+		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "New Delhi,nan Temperature 27.496 Status few clouds",
+		title: "New Delhi,nan Temperature 22.925 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(-6.208763, 106.845599);
-		var img = new google.maps.MarkerImage('markers/04d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Jakarta,nan Temperature 26.546 Status broken clouds",
+		title: "Jakarta,nan Temperature 25.56 Status scattered clouds",
 		icon: img,
 		position: latlng
 		});
@@ -837,7 +953,7 @@
 		var latlng = new google.maps.LatLng(35.689197, 51.388974);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Tehran,nan Temperature 16.996 Status clear sky",
+		title: "Tehran,nan Temperature 14.962 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -846,16 +962,16 @@
 		var latlng = new google.maps.LatLng(33.312806, 44.361488);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Baghdad,nan Temperature 27.396 Status clear sky",
+		title: "Baghdad,nan Temperature 20.925 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(32.540445, -82.903754);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Dublin,nan Temperature 32.046 Status clear sky",
+		title: "Dublin,nan Temperature 26.225 Status light rain",
 		icon: img,
 		position: latlng
 		});
@@ -864,7 +980,7 @@
 		var latlng = new google.maps.LatLng(31.508807, -82.849865);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Douglas,nan Temperature 31.546 Status clear sky",
+		title: "Douglas,nan Temperature 32.612 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -873,7 +989,7 @@
 		var latlng = new google.maps.LatLng(31.768319, 35.213710);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Jerusalem,nan Temperature 22.996 Status clear sky",
+		title: "Jerusalem,nan Temperature 17.425 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -882,16 +998,16 @@
 		var latlng = new google.maps.LatLng(43.212847, -75.455730);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Rome,nan Temperature 23.396 Status clear sky",
+		title: "Rome,nan Temperature 27.78 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(41.927037, -73.997361);
-		var img = new google.maps.MarkerImage('markers/02d.png');
+		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Kingston,nan Temperature 23.996 Status few clouds",
+		title: "Kingston,nan Temperature 25.65 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -900,16 +1016,16 @@
 		var latlng = new google.maps.LatLng(35.689487, 139.691706);
 		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Tokyo,nan Temperature 18.946 Status light rain",
+		title: "Tokyo,nan Temperature 18.7 Status moderate rain",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(49.180502, -2.103233);
-		var img = new google.maps.MarkerImage('markers/10d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Saint Helier,nan Temperature 16.346 Status light rain",
+		title: "Saint Helier,nan Temperature 16.575 Status overcast clouds",
 		icon: img,
 		position: latlng
 		});
@@ -918,7 +1034,7 @@
 		var latlng = new google.maps.LatLng(31.945367, 35.928372);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Amman,nan Temperature 20.546 Status clear sky",
+		title: "Amman,nan Temperature 17.212 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -927,7 +1043,7 @@
 		var latlng = new google.maps.LatLng(51.160523, 71.470356);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Astana,nan Temperature 7.896 Status clear sky",
+		title: "Astana,nan Temperature 8.575 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -936,16 +1052,16 @@
 		var latlng = new google.maps.LatLng(-1.292066, 36.821946);
 		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Nairobi,nan Temperature 15.496 Status light rain",
+		title: "Nairobi,nan Temperature 13.462 Status light rain",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(1.329053, 172.979053);
-		var img = new google.maps.MarkerImage('markers/10d.png');
+		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "Tarawa,nan Temperature 28.446 Status light rain",
+		title: "Tarawa,nan Temperature 28.562 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
@@ -954,7 +1070,7 @@
 		var latlng = new google.maps.LatLng(42.662914, 21.165503);
 		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Pristina,nan Temperature 10.996 Status light rain",
+		title: "Pristina,nan Temperature 8.462 Status light rain",
 		icon: img,
 		position: latlng
 		});
@@ -963,34 +1079,34 @@
 		var latlng = new google.maps.LatLng(29.375859, 47.977405);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Kuwait City,nan Temperature 32.396 Status clear sky",
+		title: "Kuwait City,nan Temperature 30.075 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(42.874621, 74.569762);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Bishkek,nan Temperature 6.846 Status clear sky",
+		title: "Bishkek,nan Temperature 5.075 Status scattered clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(17.975706, 102.633104);
-		var img = new google.maps.MarkerImage('markers/10d.png');
+		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Vientiane,nan Temperature 22.546 Status light rain",
+		title: "Vientiane,nan Temperature 24.825 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(56.949649, 24.105186);
-		var img = new google.maps.MarkerImage('markers/04d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Riga,nan Temperature 15.046 Status broken clouds",
+		title: "Riga,nan Temperature 10.575 Status scattered clouds",
 		icon: img,
 		position: latlng
 		});
@@ -999,70 +1115,79 @@
 		var latlng = new google.maps.LatLng(33.893791, 35.501777);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Beirut,nan Temperature 21.646 Status clear sky",
+		title: "Beirut,nan Temperature 20.012 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(-29.363219, 27.514360);
-		var img = new google.maps.MarkerImage('markers/02d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Maseru,nan Temperature 14.146 Status few clouds",
+		title: "Maseru,nan Temperature 13.812 Status overcast clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(6.290743, -10.760524);
-		var img = new google.maps.MarkerImage('markers/03d.png');
+		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "Monrovia,nan Temperature 26.646 Status overcast clouds",
+		title: "Monrovia,nan Temperature 25.975 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(32.887209, 13.191338);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/02d.png');
 		var marker = new google.maps.Marker({
-		title: "Tripoli,nan Temperature 26.196 Status clear sky",
+		title: "Tripoli,nan Temperature 25.375 Status few clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(47.141030, 9.520928);
-		var img = new google.maps.MarkerImage('markers/04d.png');
+		var img = new google.maps.MarkerImage('markers/02d.png');
 		var marker = new google.maps.Marker({
-		title: "Vaduz,nan Temperature 10.896 Status broken clouds",
+		title: "Vaduz,nan Temperature 7.925 Status few clouds",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(54.687156, 25.279651);
+		var img = new google.maps.MarkerImage('markers/10d.png');
+		var marker = new google.maps.Marker({
+		title: "Vilnius,nan Temperature 9.812 Status light rain",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(49.815273, 6.129583);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Luxembourg,nan Temperature 12.596 Status clear sky",
+		title: "Luxembourg,nan Temperature 11.575 Status light rain",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(41.997346, 21.427996);
-		var img = new google.maps.MarkerImage('markers/10d.png');
+		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Skopje,nan Temperature 12.196 Status moderate rain",
+		title: "Skopje,nan Temperature 8.275 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(-18.879190, 47.507905);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "Antananarivo,nan Temperature 11.896 Status clear sky",
+		title: "Antananarivo,nan Temperature 9.412 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
@@ -1071,34 +1196,34 @@
 		var latlng = new google.maps.LatLng(-13.962612, 33.774119);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Lilongwe,nan Temperature 17.096 Status clear sky",
+		title: "Lilongwe,nan Temperature 14.425 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(3.152310, 101.717832);
-		var img = new google.maps.MarkerImage('markers/03d.png');
+		var img = new google.maps.MarkerImage('markers/02d.png');
 		var marker = new google.maps.Marker({
-		title: "Kuala Lumpur,nan Temperature 26.646 Status overcast clouds",
+		title: "Kuala Lumpur,nan Temperature 25.725 Status few clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(4.175496, 73.509347);
-		var img = new google.maps.MarkerImage('markers/03d.png');
+		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "Male,nan Temperature 29.146 Status overcast clouds",
+		title: "Male,nan Temperature 26.425 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(12.639232, -8.002889);
-		var img = new google.maps.MarkerImage('markers/10d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Bamako,nan Temperature 28.646 Status light rain",
+		title: "Bamako,nan Temperature 24.975 Status scattered clouds",
 		icon: img,
 		position: latlng
 		});
@@ -1107,7 +1232,7 @@
 		var latlng = new google.maps.LatLng(35.898908, 14.514553);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Valletta,nan Temperature 24.096 Status clear sky",
+		title: "Valletta,nan Temperature 24.275 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -1116,16 +1241,16 @@
 		var latlng = new google.maps.LatLng(7.092151, 171.382558);
 		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Majuro,nan Temperature 28.546 Status scattered clouds",
+		title: "Majuro,nan Temperature 28.475 Status scattered clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(18.073530, -15.958237);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "Nouakchott,nan Temperature 27.996 Status clear sky",
+		title: "Nouakchott,nan Temperature 28.325 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
@@ -1134,7 +1259,7 @@
 		var latlng = new google.maps.LatLng(47.708392, -3.356342);
 		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Port Louis,nan Temperature 16.096 Status scattered clouds",
+		title: "Port Louis,nan Temperature 9.575 Status scattered clouds",
 		icon: img,
 		position: latlng
 		});
@@ -1143,52 +1268,52 @@
 		var latlng = new google.maps.LatLng(19.432608, -99.133208);
 		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Mexico City,nan Temperature 18.346 Status light rain",
+		title: "Mexico City,nan Temperature 16.575 Status light rain",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(47.010453, 28.863810);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Chisinau,nan Temperature 9.946 Status clear sky",
+		title: "Chisinau,nan Temperature 16.175 Status light rain",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(43.738418, 7.424616);
-		var img = new google.maps.MarkerImage('markers/02d.png');
+		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Monaco,nan Temperature 13.996 Status few clouds",
+		title: "Monaco,nan Temperature 11.525 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(47.886399, 106.905744);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Ulaanbaatar,nan Temperature 0.396 Status clear sky",
+		title: "Ulaanbaatar,nan Temperature 6.275 Status light rain",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(42.430420, 19.259364);
-		var img = new google.maps.MarkerImage('markers/04d.png');
+		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Podgorica,nan Temperature 11.046 Status broken clouds",
+		title: "Podgorica,nan Temperature 11.675 Status light rain",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(42.373533, -83.509038);
-		var img = new google.maps.MarkerImage('markers/02d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Plymouth,nan Temperature 26.746 Status few clouds",
+		title: "Plymouth,nan Temperature 21.225 Status overcast clouds",
 		icon: img,
 		position: latlng
 		});
@@ -1197,16 +1322,16 @@
 		var latlng = new google.maps.LatLng(33.971590, -6.849813);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Rabat,nan Temperature 21.746 Status clear sky",
+		title: "Rabat,nan Temperature 19.175 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(-25.891968, 32.605135);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Maputo,nan Temperature 28.296 Status clear sky",
+		title: "Maputo,nan Temperature 19.925 Status scattered clouds",
 		icon: img,
 		position: latlng
 		});
@@ -1215,7 +1340,7 @@
 		var latlng = new google.maps.LatLng(16.866069, 96.195132);
 		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Rangoon,nan Temperature 24.646 Status light rain",
+		title: "Rangoon,nan Temperature 25.125 Status light rain",
 		icon: img,
 		position: latlng
 		});
@@ -1224,7 +1349,7 @@
 		var latlng = new google.maps.LatLng(-22.560881, 17.065755);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Windhoek,nan Temperature 18.046 Status clear sky",
+		title: "Windhoek,nan Temperature 3.525 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -1233,25 +1358,25 @@
 		var latlng = new google.maps.LatLng(-0.546686, 166.921091);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Yaren,nan Temperature 28.096 Status clear sky",
+		title: "Yaren,nan Temperature 29.375 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(27.717245, 85.323960);
-		var img = new google.maps.MarkerImage('markers/10d.png');
+		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Kathmandu,nan Temperature 18.246 Status moderate rain",
+		title: "Kathmandu,nan Temperature 18.325 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(42.937745, -74.190356);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "Amsterdam,nan Temperature 23.396 Status clear sky",
+		title: "Amsterdam,nan Temperature 18.625 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
@@ -1260,34 +1385,34 @@
 		var latlng = new google.maps.LatLng(-22.255823, 166.450524);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Noumea,nan Temperature 16.846 Status clear sky",
+		title: "Noumea,nan Temperature 24.275 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(-41.286426, 174.776244);
-		var img = new google.maps.MarkerImage('markers/04d.png');
+		var img = new google.maps.MarkerImage('markers/02d.png');
 		var marker = new google.maps.Marker({
-		title: "Wellington,nan Temperature 10.546 Status broken clouds",
+		title: "Wellington,nan Temperature 11.225 Status few clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(12.114993, -86.236174);
-		var img = new google.maps.MarkerImage('markers/04d.png');
+		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Managua,nan Temperature 31.146 Status broken clouds",
+		title: "Managua,nan Temperature 25.625 Status light rain",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(13.511596, 2.125385);
-		var img = new google.maps.MarkerImage('markers/10d.png');
+		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Niamey,nan Temperature 27.046 Status light rain",
+		title: "Niamey,nan Temperature 24.125 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -1296,25 +1421,25 @@
 		var latlng = new google.maps.LatLng(9.076479, 7.398574);
 		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Abuja,nan Temperature 23.596 Status light rain",
+		title: "Abuja,nan Temperature 21.725 Status light rain",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(-19.055371, -169.917871);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Alofi,nan Temperature 22.996 Status clear sky",
+		title: "Alofi,nan Temperature 24.275 Status overcast clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(41.927037, -73.997361);
-		var img = new google.maps.MarkerImage('markers/02d.png');
+		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Kingston,nan Temperature 23.996 Status few clouds",
+		title: "Kingston,nan Temperature 25.65 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -1323,7 +1448,7 @@
 		var latlng = new google.maps.LatLng(39.039219, 125.762524);
 		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "Pyongyang,nan Temperature 12.296 Status broken clouds",
+		title: "Pyongyang,nan Temperature 19.375 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
@@ -1332,16 +1457,16 @@
 		var latlng = new google.maps.LatLng(35.185566, 33.382276);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "North Nicosia,nan Temperature 25.746 Status clear sky",
+		title: "North Nicosia,nan Temperature 24.562 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(15.177801, 145.750967);
-		var img = new google.maps.MarkerImage('markers/10d.png');
+		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "Saipan,nan Temperature 27.446 Status moderate rain",
+		title: "Saipan,nan Temperature 28.975 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
@@ -1350,7 +1475,7 @@
 		var latlng = new google.maps.LatLng(59.913869, 10.752245);
 		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Oslo,nan Temperature 13.796 Status overcast clouds",
+		title: "Oslo,nan Temperature 8.975 Status scattered clouds",
 		icon: img,
 		position: latlng
 		});
@@ -1359,7 +1484,7 @@
 		var latlng = new google.maps.LatLng(23.585890, 58.405923);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Muscat,nan Temperature 25.246 Status clear sky",
+		title: "Muscat,nan Temperature 21.275 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -1368,16 +1493,16 @@
 		var latlng = new google.maps.LatLng(33.729388, 73.093146);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Islamabad,nan Temperature 21.196 Status clear sky",
+		title: "Islamabad,nan Temperature 19.225 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(7.495116, 134.633690);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "Melekeok,nan Temperature 28.646 Status clear sky",
+		title: "Melekeok,nan Temperature 28.475 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
@@ -1386,7 +1511,7 @@
 		var latlng = new google.maps.LatLng(31.768319, 35.213710);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Jerusalem,nan Temperature 22.996 Status clear sky",
+		title: "Jerusalem,nan Temperature 17.425 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -1395,7 +1520,7 @@
 		var latlng = new google.maps.LatLng(30.158813, -85.660206);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Panama City,nan Temperature 28.396 Status clear sky",
+		title: "Panama City,nan Temperature 32.85 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -1404,7 +1529,7 @@
 		var latlng = new google.maps.LatLng(-9.478012, 147.150654);
 		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Port Moresby,nan Temperature 25.896 Status scattered clouds",
+		title: "Port Moresby,nan Temperature 26.625 Status scattered clouds",
 		icon: img,
 		position: latlng
 		});
@@ -1413,25 +1538,25 @@
 		var latlng = new google.maps.LatLng(-25.263740, -57.575926);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Asuncion,nan Temperature 27.996 Status clear sky",
+		title: "Asuncion,nan Temperature 26.912 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(40.742551, -84.105226);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Lima,nan Temperature 30.246 Status clear sky",
+		title: "Lima,nan Temperature 20.825 Status light rain",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(14.599512, 120.984219);
-		var img = new google.maps.MarkerImage('markers/04d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Manila,nan Temperature 25.146 Status broken clouds",
+		title: "Manila,nan Temperature 25.062 Status scattered clouds",
 		icon: img,
 		position: latlng
 		});
@@ -1440,7 +1565,7 @@
 		var latlng = new google.maps.LatLng(39.311540, -77.475360);
 		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Adamstown,nan Temperature 28.546 Status scattered clouds",
+		title: "Adamstown,nan Temperature 27.65 Status scattered clouds",
 		icon: img,
 		position: latlng
 		});
@@ -1449,7 +1574,7 @@
 		var latlng = new google.maps.LatLng(41.238100, -85.853047);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Warsaw,nan Temperature 30.596 Status clear sky",
+		title: "Warsaw,nan Temperature 31.11 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -1458,7 +1583,7 @@
 		var latlng = new google.maps.LatLng(38.722252, -9.139337);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Lisbon,nan Temperature 20.046 Status clear sky",
+		title: "Lisbon,nan Temperature 15.475 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -1467,7 +1592,7 @@
 		var latlng = new google.maps.LatLng(26.189241, -98.155287);
 		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "San Juan,nan Temperature 33.796 Status light rain",
+		title: "San Juan,nan Temperature 31.825 Status moderate rain",
 		icon: img,
 		position: latlng
 		});
@@ -1476,70 +1601,70 @@
 		var latlng = new google.maps.LatLng(25.285447, 51.531040);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Doha,nan Temperature 31.946 Status clear sky",
+		title: "Doha,nan Temperature 30.162 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(-4.263360, 15.242885);
-		var img = new google.maps.MarkerImage('markers/03d.png');
+		var img = new google.maps.MarkerImage('markers/02d.png');
 		var marker = new google.maps.Marker({
-		title: "Brazzaville,nan Temperature 26.746 Status scattered clouds",
+		title: "Brazzaville,nan Temperature 21.425 Status few clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(44.426767, 26.102538);
-		var img = new google.maps.MarkerImage('markers/10d.png');
+		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "Bucharest,nan Temperature 10.846 Status light rain",
+		title: "Bucharest,nan Temperature 11.65 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(46.732387, -117.000165);
-		var img = new google.maps.MarkerImage('markers/04d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Moscow,nan Temperature 15.146 Status broken clouds",
+		title: "Moscow,nan Temperature 17.212 Status overcast clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(-1.970579, 30.104429);
-		var img = new google.maps.MarkerImage('markers/04d.png');
+		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Kigali,nan Temperature 18.746 Status broken clouds",
+		title: "Kigali,nan Temperature 13.975 Status light rain",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(17.896435, -62.852201);
-		var img = new google.maps.MarkerImage('markers/10d.png');
+		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "Gustavia,nan Temperature 28.346 Status light rain",
+		title: "Gustavia,nan Temperature 27.962 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(46.910544, -98.708436);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Jamestown,nan Temperature 18.746 Status clear sky",
+		title: "Jamestown,nan Temperature 14.575 Status scattered clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(17.302606, -62.717692);
-		var img = new google.maps.MarkerImage('markers/10d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Basseterre,nan Temperature 29.346 Status light rain",
+		title: "Basseterre,nan Temperature 29.162 Status overcast clouds",
 		icon: img,
 		position: latlng
 		});
@@ -1548,16 +1673,16 @@
 		var latlng = new google.maps.LatLng(43.677589, 3.985579);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Castries,nan Temperature 20.496 Status clear sky",
+		title: "Castries,nan Temperature 17.462 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(18.067519, -63.082466);
-		var img = new google.maps.MarkerImage('markers/10d.png');
+		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "Marigot,nan Temperature 28.346 Status light rain",
+		title: "Marigot,nan Temperature 30.8 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
@@ -1566,7 +1691,7 @@
 		var latlng = new google.maps.LatLng(-21.236615, 55.535815);
 		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Saint-Pierre,nan Temperature 19.896 Status light rain",
+		title: "Saint-Pierre,nan Temperature 19.262 Status light rain",
 		icon: img,
 		position: latlng
 		});
@@ -1575,34 +1700,34 @@
 		var latlng = new google.maps.LatLng(13.160025, -61.224816);
 		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Kingstown,nan Temperature 29.896 Status overcast clouds",
+		title: "Kingstown,nan Temperature 29.362 Status overcast clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(-13.850696, -171.751355);
-		var img = new google.maps.MarkerImage('markers/04d.png');
+		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Apia,nan Temperature 28.046 Status broken clouds",
+		title: "Apia,nan Temperature 26.175 Status light rain",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(34.121397, -118.106459);
-		var img = new google.maps.MarkerImage('markers/02d.png');
+		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "San Marino,nan Temperature 26.996 Status few clouds",
+		title: "San Marino,nan Temperature 26.325 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(0.330192, 6.733343);
-		var img = new google.maps.MarkerImage('markers/02d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Sao Tome,nan Temperature 25.996 Status few clouds",
+		title: "Sao Tome,nan Temperature 24.575 Status overcast clouds",
 		icon: img,
 		position: latlng
 		});
@@ -1611,7 +1736,7 @@
 		var latlng = new google.maps.LatLng(24.713552, 46.675296);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Riyadh,nan Temperature 29.096 Status clear sky",
+		title: "Riyadh,nan Temperature 24.462 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -1620,16 +1745,16 @@
 		var latlng = new google.maps.LatLng(14.764504, -17.366029);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Dakar,nan Temperature 28.296 Status clear sky",
+		title: "Dakar,nan Temperature 27.962 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(44.786568, 20.448922);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "Belgrade,nan Temperature 11.246 Status clear sky",
+		title: "Belgrade,nan Temperature 16.525 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
@@ -1638,7 +1763,7 @@
 		var latlng = new google.maps.LatLng(48.428421, -123.365644);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Victoria,nan Temperature 15.746 Status clear sky",
+		title: "Victoria,nan Temperature 19.02 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -1647,16 +1772,16 @@
 		var latlng = new google.maps.LatLng(38.973107, -86.129429);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Freetown,nan Temperature 31.146 Status clear sky",
+		title: "Freetown,nan Temperature 28.96 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(1.352083, 103.819836);
-		var img = new google.maps.MarkerImage('markers/03d.png');
+		var img = new google.maps.MarkerImage('markers/02d.png');
 		var marker = new google.maps.Marker({
-		title: "Singapore,nan Temperature 27.146 Status overcast clouds",
+		title: "Singapore,nan Temperature 28.575 Status few clouds",
 		icon: img,
 		position: latlng
 		});
@@ -1665,7 +1790,7 @@
 		var latlng = new google.maps.LatLng(46.332506, -113.294416);
 		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Philipsburg,nan Temperature 8.296 Status scattered clouds",
+		title: "Philipsburg,nan Temperature 15.275 Status scattered clouds",
 		icon: img,
 		position: latlng
 		});
@@ -1674,7 +1799,7 @@
 		var latlng = new google.maps.LatLng(48.148596, 17.107747);
 		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "Bratislava,nan Temperature 15.496 Status broken clouds",
+		title: "Bratislava,nan Temperature 15.225 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
@@ -1683,70 +1808,70 @@
 		var latlng = new google.maps.LatLng(46.056947, 14.505752);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Ljubljana,nan Temperature 8.946 Status clear sky",
+		title: "Ljubljana,nan Temperature 10.95 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(-9.445638, 159.972900);
-		var img = new google.maps.MarkerImage('markers/04d.png');
+		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Honiara,nan Temperature 22.896 Status broken clouds",
+		title: "Honiara,nan Temperature 25.375 Status light rain",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(2.046934, 45.318162);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "Mogadishu,nan Temperature 25.346 Status clear sky",
+		title: "Mogadishu,nan Temperature 25.162 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(9.562389, 44.077013);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/02d.png');
 		var marker = new google.maps.Marker({
-		title: "Hargeisa,nan Temperature 23.896 Status clear sky",
+		title: "Hargeisa,nan Temperature 17.725 Status few clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(-25.747868, 28.229271);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Pretoria,nan Temperature 16.146 Status clear sky",
+		title: "Pretoria,nan Temperature 13.225 Status overcast clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(-54.283250, -36.493735);
-		var img = new google.maps.MarkerImage('markers/10d.png');
+		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "King Edward Point,nan Temperature 0.846 Status light rain",
+		title: "King Edward Point,nan Temperature -3.875 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(37.566535, 126.977969);
-		var img = new google.maps.MarkerImage('markers/03d.png');
+		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "Seoul,nan Temperature 13.146 Status overcast clouds",
+		title: "Seoul,nan Temperature 12.562 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(4.859363, 31.571250);
-		var img = new google.maps.MarkerImage('markers/02d.png');
+		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Juba,nan Temperature 21.546 Status few clouds",
+		title: "Juba,nan Temperature 20.712 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -1755,25 +1880,25 @@
 		var latlng = new google.maps.LatLng(40.416775, -3.703790);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Madrid,nan Temperature 23.346 Status clear sky",
+		title: "Madrid,nan Temperature 13.075 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(6.927079, 79.861243);
-		var img = new google.maps.MarkerImage('markers/04d.png');
+		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Colombo,nan Temperature 26.896 Status broken clouds",
+		title: "Colombo,nan Temperature 24.375 Status light rain",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(15.500654, 32.559899);
-		var img = new google.maps.MarkerImage('markers/02d.png');
+		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Khartoum,nan Temperature 31.546 Status few clouds",
+		title: "Khartoum,nan Temperature 26.975 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -1782,25 +1907,25 @@
 		var latlng = new google.maps.LatLng(5.852036, -55.203828);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Paramaribo,nan Temperature 30.046 Status clear sky",
+		title: "Paramaribo,nan Temperature 27.925 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(78.223172, 15.626723);
-		var img = new google.maps.MarkerImage('markers/10d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Longyearbyen,nan Temperature 2.646 Status light rain",
+		title: "Longyearbyen,nan Temperature 0.225 Status scattered clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(-26.305448, 31.136671);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Mbabane,nan Temperature 17.846 Status clear sky",
+		title: "Mbabane,nan Temperature 11.425 Status light rain",
 		icon: img,
 		position: latlng
 		});
@@ -1809,7 +1934,7 @@
 		var latlng = new google.maps.LatLng(59.329323, 18.068581);
 		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Stockholm,nan Temperature 12.846 Status scattered clouds",
+		title: "Stockholm,nan Temperature 9.16 Status scattered clouds",
 		icon: img,
 		position: latlng
 		});
@@ -1818,7 +1943,7 @@
 		var latlng = new google.maps.LatLng(46.947974, 7.447447);
 		var img = new google.maps.MarkerImage('markers/02d.png');
 		var marker = new google.maps.Marker({
-		title: "Bern,nan Temperature 11.646 Status few clouds",
+		title: "Bern,nan Temperature 5.175 Status few clouds",
 		icon: img,
 		position: latlng
 		});
@@ -1827,16 +1952,16 @@
 		var latlng = new google.maps.LatLng(33.513807, 36.276528);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Damascus,nan Temperature 14.696 Status clear sky",
+		title: "Damascus,nan Temperature 10.662 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(25.032964, 121.565427);
-		var img = new google.maps.MarkerImage('markers/10d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Taipei,nan Temperature 23.546 Status light rain",
+		title: "Taipei,nan Temperature 26.575 Status scattered clouds",
 		icon: img,
 		position: latlng
 		});
@@ -1845,16 +1970,16 @@
 		var latlng = new google.maps.LatLng(38.085921, 70.013097);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Dushanbe,nan Temperature 9.896 Status clear sky",
+		title: "Dushanbe,nan Temperature 7.375 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(-6.792354, 39.208328);
-		var img = new google.maps.MarkerImage('markers/04d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Dar es Salaam,nan Temperature 25.346 Status broken clouds",
+		title: "Dar es Salaam,nan Temperature 19.475 Status scattered clouds",
 		icon: img,
 		position: latlng
 		});
@@ -1863,16 +1988,16 @@
 		var latlng = new google.maps.LatLng(13.820310, 100.664710);
 		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Bangkok,nan Temperature 23.396 Status overcast clouds",
+		title: "Bangkok,nan Temperature 26.33 Status overcast clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(13.454876, -16.579032);
-		var img = new google.maps.MarkerImage('markers/02d.png');
+		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Banjul,nan Temperature 28.346 Status few clouds",
+		title: "Banjul,nan Temperature 27.712 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -1881,16 +2006,16 @@
 		var latlng = new google.maps.LatLng(-8.556856, 125.560314);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Dili,nan Temperature 26.546 Status clear sky",
+		title: "Dili,nan Temperature 26.412 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(6.172497, 1.231362);
-		var img = new google.maps.MarkerImage('markers/03d.png');
+		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "Lome,nan Temperature 26.546 Status scattered clouds",
+		title: "Lome,nan Temperature 24.975 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
@@ -1899,25 +2024,25 @@
 		var latlng = new google.maps.LatLng(-8.556548, -172.472568);
 		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Atafu,nan Temperature 28.646 Status overcast clouds",
+		title: "Atafu,nan Temperature 28.462 Status overcast clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(-21.139342, -175.204947);
-		var img = new google.maps.MarkerImage('markers/03d.png');
+		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "Nuku’alofa,nan Temperature 23.196 Status scattered clouds",
+		title: "Nuku’alofa,nan Temperature 23.312 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(10.654901, -61.501926);
-		var img = new google.maps.MarkerImage('markers/10d.png');
+		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Port of Spain,nan Temperature 29.796 Status moderate rain",
+		title: "Port of Spain,nan Temperature 26.11 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -1926,16 +2051,16 @@
 		var latlng = new google.maps.LatLng(33.886917, 9.537499);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Tunis,nan Temperature 27.996 Status clear sky",
+		title: "Tunis,nan Temperature 24.412 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(39.933363, 32.859742);
-		var img = new google.maps.MarkerImage('markers/03d.png');
+		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Ankara,nan Temperature 14.646 Status overcast clouds",
+		title: "Ankara,nan Temperature 15.56 Status light rain",
 		icon: img,
 		position: latlng
 		});
@@ -1944,7 +2069,7 @@
 		var latlng = new google.maps.LatLng(37.960077, 58.326063);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Ashgabat,nan Temperature 13.546 Status clear sky",
+		title: "Ashgabat,nan Temperature 10.412 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -1953,16 +2078,16 @@
 		var latlng = new google.maps.LatLng(21.467458, -71.138910);
 		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "Grand Turk,nan Temperature 29.796 Status broken clouds",
+		title: "Grand Turk,nan Temperature 28.825 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(-8.520066, 179.198128);
-		var img = new google.maps.MarkerImage('markers/10d.png');
+		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Funafuti,nan Temperature 27.146 Status moderate rain",
+		title: "Funafuti,nan Temperature 28.112 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -1971,7 +2096,7 @@
 		var latlng = new google.maps.LatLng(0.347596, 32.582520);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Kampala,nan Temperature 18.746 Status clear sky",
+		title: "Kampala,nan Temperature 15.025 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -1980,7 +2105,7 @@
 		var latlng = new google.maps.LatLng(50.450100, 30.523400);
 		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Kyiv,nan Temperature 9.596 Status light rain",
+		title: "Kyiv,nan Temperature 8.862 Status light rain",
 		icon: img,
 		position: latlng
 		});
@@ -1989,16 +2114,16 @@
 		var latlng = new google.maps.LatLng(24.299174, 54.697277);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Abu Dhabi,nan Temperature 29.246 Status clear sky",
+		title: "Abu Dhabi,nan Temperature 26.912 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(51.507351, -0.127758);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/02d.png');
 		var marker = new google.maps.Marker({
-		title: "London,nan Temperature 17.346 Status clear sky",
+		title: "London,nan Temperature 15.24 Status few clouds",
 		icon: img,
 		position: latlng
 		});
@@ -2007,7 +2132,7 @@
 		var latlng = new google.maps.LatLng(39.244853, -81.663776);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Washington,nan Temperature 30.346 Status clear sky",
+		title: "Washington,nan Temperature 30.35 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -2016,7 +2141,7 @@
 		var latlng = new google.maps.LatLng(-34.901113, -56.164531);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Montevideo,nan Temperature 20.296 Status clear sky",
+		title: "Montevideo,nan Temperature 23.12 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -2025,34 +2150,34 @@
 		var latlng = new google.maps.LatLng(18.341900, -64.930701);
 		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Charlotte Amalie,nan Temperature 28.746 Status scattered clouds",
+		title: "Charlotte Amalie,nan Temperature 28.525 Status overcast clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(41.299496, 69.240073);
-		var img = new google.maps.MarkerImage('markers/01d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Tashkent,nan Temperature 19.346 Status clear sky",
+		title: "Tashkent,nan Temperature 16.525 Status scattered clouds",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(-17.733251, 168.327325);
-		var img = new google.maps.MarkerImage('markers/04d.png');
+		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Port-Vila,nan Temperature 23.896 Status broken clouds",
+		title: "Port-Vila,nan Temperature 25.475 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(41.902916, 12.453389);
-		var img = new google.maps.MarkerImage('markers/10d.png');
+		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
-		title: "Vatican City,nan Temperature 16.246 Status light rain",
+		title: "Vatican City,nan Temperature 13.512 Status broken clouds",
 		icon: img,
 		position: latlng
 		});
@@ -2061,16 +2186,16 @@
 		var latlng = new google.maps.LatLng(10.480594, -66.903606);
 		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Caracas,nan Temperature 28.746 Status light rain",
+		title: "Caracas,nan Temperature 23.275 Status light rain",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(21.027764, 105.834160);
-		var img = new google.maps.MarkerImage('markers/02d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
-		title: "Hanoi,nan Temperature 23.496 Status few clouds",
+		title: "Hanoi,nan Temperature 26.425 Status overcast clouds",
 		icon: img,
 		position: latlng
 		});
@@ -2079,16 +2204,16 @@
 		var latlng = new google.maps.LatLng(-13.282509, -176.176447);
 		var img = new google.maps.MarkerImage('markers/10d.png');
 		var marker = new google.maps.Marker({
-		title: "Mata-Utu,nan Temperature 25.846 Status light rain",
+		title: "Mata-Utu,nan Temperature 25.975 Status light rain",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
 		var latlng = new google.maps.LatLng(15.369445, 44.191007);
-		var img = new google.maps.MarkerImage('markers/02d.png');
+		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Sanaa,nan Temperature 15.846 Status few clouds",
+		title: "Sanaa,nan Temperature 12.462 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -2097,7 +2222,7 @@
 		var latlng = new google.maps.LatLng(-15.387526, 28.322816);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Lusaka,nan Temperature 22.246 Status clear sky",
+		title: "Lusaka,nan Temperature 18.862 Status clear sky",
 		icon: img,
 		position: latlng
 		});
@@ -2106,14 +2231,12 @@
 		var latlng = new google.maps.LatLng(-17.825166, 31.033510);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
-		title: "Harare,nan Temperature 18.746 Status clear sky",
+		title: "Harare,nan Temperature 15.675 Status clear sky",
 		icon: img,
 		position: latlng
 		});
 		marker.setMap(map);
 
-=======
->>>>>>> origin/master
 	}
 </script>
 </head>
