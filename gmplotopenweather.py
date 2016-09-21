@@ -2,6 +2,7 @@ import gmplot
 from weather_dicts import icon_weather_codes,mpl_color_map,html_color_codes
 import os
 import urlparse
+import urllib2,json
 
 
 class GoogleMapPlotter(gmplot.GoogleMapPlotter):
@@ -61,3 +62,14 @@ class GoogleMapPlotter(gmplot.GoogleMapPlotter):
         f.write('</body>\n')
         f.write('</html>\n')
         f.close()
+
+    def getCoordinates(gmplot,address,apigooglemaps):
+        address = address.replace (" ", "+")
+        response = urllib2.urlopen("https://maps.googleapis.com/maps/api/geocode/json?address=%s" % address)
+        data = json.loads(response.read())
+        lat = 0
+        lng = 0
+        for s in data['results']:
+            lat = s['geometry']['location']['lat']
+            lng = s['geometry']['location']['lng']
+        return [lat,lng]
