@@ -65,7 +65,7 @@ class GoogleMapPlotter(gmplot.GoogleMapPlotter):
 
     def getCoordinates(gmplot,address,apigooglemaps):
         address = address.replace (" ", "+")
-        response = urllib2.urlopen("https://maps.googleapis.com/maps/api/geocode/json?address=%s" % address)
+        response = urllib2.urlopen("https://maps.googleapis.com/maps/api/geocode/json?address=%s&key=%s" % (address,apigooglemaps))
         data = json.loads(response.read())
         lat = 0
         lng = 0

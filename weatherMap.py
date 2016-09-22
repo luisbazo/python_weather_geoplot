@@ -29,7 +29,7 @@ for index, row in df.iterrows():
 
   iterate = True
   counter = 0
-  while (iterate and counter < 10):
+  while (iterate and counter < 2):
     try:
         print "Retrieving information of city " + loc_city
         #location = geolocator.geocode(df.loc[index,"city"])
