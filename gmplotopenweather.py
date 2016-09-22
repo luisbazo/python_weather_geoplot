@@ -78,6 +78,30 @@ class GoogleMapPlotter(gmplot.GoogleMapPlotter):
         f.write('\t\t\t});\n')
         f.write('\t\t}\n')
 
+    def write_points(geoplot, f):
+        for point in geoplot.points:
+            geoplot.write_point(f, point[0], point[1], point[2], point[3])
+
+    def write_point(geoplot, f, lat, lon, color, title):
+        f.write('\t\tvar latlng = new google.maps.LatLng(%f, %f);\n' %
+            (lat, lon))
+        f.write('\t\tvar img = new google.maps.MarkerImage(\'%s\');\n' %
+            (geoplot.coloricon % color))
+        f.write('\t\tvar marker = new google.maps.Marker({\n')
+        #f.write('\t\ttitle: "%s",\n' % title)
+        f.write('\t\ticon: img,\n')
+        f.write('\t\tposition: latlng\n')
+        f.write('\t\t});\n')
+        f.write('\t\tmarker.setMap(map);\n')
+        f.write('\n')
+
+        f.write('\t\tvar infoWindow = new google.maps.InfoWindow({map: map});\n')
+        f.write('\t\tmarker.addListener(\'click\', function() {\n')
+        f.write('\t\tinfoWindow.setContent(\'%s\');\n' % title)
+        f.write('\t\tinfoWindow.setPosition(latlng);\n')
+        f.write('\t\tinfoWindow.open(map, this);\n')
+        f.write('\t\t});\n');
+        f.write('\n')
 
     def getCoordinates(gmplot,address,apigooglemaps):
         address = address.replace (" ", "+")
