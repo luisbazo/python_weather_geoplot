@@ -47,6 +47,7 @@ class GoogleMapPlotter(gmplot.GoogleMapPlotter):
         f.write('<script type="text/javascript">\n')
         f.write('\tfunction initialize() {\n')
         gmplot.write_map(f)
+        gmplot.write_location(f)
         gmplot.write_grids(f)
         gmplot.write_points(f)
         gmplot.write_paths(f)
@@ -62,6 +63,21 @@ class GoogleMapPlotter(gmplot.GoogleMapPlotter):
         f.write('</body>\n')
         f.write('</html>\n')
         f.close()
+
+    def write_location(gmplot,f):
+        f.write('\t\tvar infoWindow = new google.maps.InfoWindow({map: map});\n')
+        f.write('\t\tif (navigator.geolocation) {\n')
+        f.write('\t\t\tnavigator.geolocation.getCurrentPosition(function(position) {\n')
+        f.write('\t\t\tvar pos = {\n')
+        f.write('\t\t\t\tlat: position.coords.latitude,\n')
+        f.write('\t\t\t\tlng: position.coords.longitude,\n')
+        f.write('\t\t\t};\n')
+        f.write('\t\t\tinfoWindow.setPosition(pos);\n')
+        f.write('\t\t\tinfoWindow.setContent(\'Your location.\');\n')
+        f.write('\t\t\tmap.setCenter(pos);\n')
+        f.write('\t\t\t});\n')
+        f.write('\t\t}\n')
+
 
     def getCoordinates(gmplot,address,apigooglemaps):
         address = address.replace (" ", "+")

@@ -22,11 +22,8 @@ owm = pyowm.OWM(api)
 df = pd.read_csv('cities.csv')
 df.head()
 
-lat,lng = gmap.getCoordinates("London",apigooglemaps)
-
 for index, row in df.iterrows():
   loc_city = str(df.loc[index,"city"]) + "," + str(df.loc[index,"country"])
-
   iterate = True
   counter = 0
   while (iterate and counter < 2):
