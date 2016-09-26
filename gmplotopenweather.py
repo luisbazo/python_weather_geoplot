@@ -95,8 +95,8 @@ class GoogleMapPlotter(gmplot.GoogleMapPlotter):
         f.write('\t\tmarker.setMap(map);\n')
         f.write('\n')
 
-        f.write('\t\tvar infoWindow = new google.maps.InfoWindow({map: map});\n')
         f.write('\t\tmarker.addListener(\'click\', function() {\n')
+        f.write('\t\tvar infoWindow = new google.maps.InfoWindow({map: map});\n')
         f.write('\t\tinfoWindow.setContent(\'%s\');\n' % title)
         f.write('\t\tinfoWindow.setPosition(latlng);\n')
         f.write('\t\tinfoWindow.open(map, this);\n')
@@ -112,4 +112,6 @@ class GoogleMapPlotter(gmplot.GoogleMapPlotter):
         for s in data['results']:
             lat = s['geometry']['location']['lat']
             lng = s['geometry']['location']['lng']
+            #In the remote case there are multiple geometry results offered for same city,country combination -> pick up first and break loop
+            break
         return [lat,lng]

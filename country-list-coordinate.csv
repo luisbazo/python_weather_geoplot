@@ -1,0 +1,308 @@
+country,capital,type,latitude,longitude
+Panama,Panama City,countryCapital,9.1011785,-79.4028639
+Mexico,Mexico City,countryCapital,19.4326077,-99.133208
+Abkhazia,Sukhumi,countryCapital,43.0015252,41.0234153
+Afghanistan,Kabul,countryCapital,34.5553494,69.207486
+Akrotiri and Dhekelia,Episkopi Cantonment,countryCapital,34.6758953,32.8817689
+Albania,Tirana,countryCapital,41.3275459,19.8186982
+Algeria,Algiers,countryCapital,36.7537703,3.0587927
+American Samoa,Pago Pago,countryCapital,-14.2756319,-170.7020359
+Andorra,Andorra la Vella,countryCapital,42.5063174,1.5218355
+Angola,Luanda,countryCapital,-8.8399876,13.2894368
+Anguilla,The Valley,countryCapital,18.2148129,-63.0574406
+Antigua and Barbuda,St. John's,countryCapital,17.1274104,-61.846772
+Argentina,Buenos Aires,countryCapital,-34.6036844,-58.3815591
+Armenia,Yerevan,countryCapital,40.1791857,44.4991029
+Aruba,Oranjestad,countryCapital,12.5092044,-70.0086306
+Ascension Island,Georgetown,countryCapital,-7.926223,-14.4112011
+Australia,Canberra,countryCapital,-35.3075,149.124417
+Austria,Vienna,countryCapital,48.2081743,16.3738189
+Azerbaijan,Baku,countryCapital,40.4092617,49.8670924
+Bahamas,Nassau,countryCapital,25.0479835,-77.355413
+Bahrain,Manama,countryCapital,26.2285161,50.5860497
+Bangladesh,Dhaka,countryCapital,23.810332,90.4125181
+Barbados,Bridgetown,countryCapital,13.1132219,-59.5988089
+Belarus,Minsk,countryCapital,53.9045398,27.5615244
+Belgium,Brussels,countryCapital,50.8503396,4.3517103
+Belize,Belmopan,countryCapital,17.2510114,-88.7590201
+Benin,Porto-Novo,countryCapital,6.4968574,2.6288523
+Bermuda,Hamilton,countryCapital,32.294816,-64.781375
+Bhutan,Thimphu,countryCapital,27.4727924,89.6392863
+Bolivia,Sucre,countryCapital,-19.0195852,-65.2619615
+Bolivia,La Paz,countryCapital,-16.489689,-68.1192936
+Bosnia and Herzegovina,Sarajevo,countryCapital,43.8562586,18.4130763
+Botswana,Gaborone,countryCapital,-24.6282079,25.9231471
+Brazil,Brasília,countryCapital,-15.7942287,-47.8821658
+British Virgin Islands,Road Town,countryCapital,18.4286115,-64.6184657
+Brunei,Bandar Seri Begawan,countryCapital,4.9030522,114.939821
+Bulgaria,Sofia,countryCapital,42.6977082,23.3218675
+Burkina Faso,Ouagadougou,countryCapital,12.3714277,-1.5196603
+Burundi,Bujumbura,countryCapital,-3.361378,29.3598782
+Cambodia,Phnom Penh,countryCapital,11.5448729,104.8921668
+Cameroon,Yaoundé,countryCapital,3.8480325,11.5020752
+Canada,Ottawa,countryCapital,45.4215296,-75.6971931
+Cape Verde,Praia,countryCapital,14.93305,-23.5133267
+Cayman Islands,George Town,countryCapital,19.2869323,-81.3674389
+Central African Republic,Bangui,countryCapital,4.3946735,18.5581899
+Chad,N'Djamena,countryCapital,12.1348457,15.0557415
+Chile,Santiago,countryCapital,-33.4378305,-70.6504492
+China,Beijing,countryCapital,39.904211,116.407395
+Christmas Island,Flying Fish Cove,countryCapital,-10.4318725,105.6735131
+Cocos (Keeling) Islands,West Island,countryCapital,-12.1450486,96.8217017
+Colombia,Bogotá,countryCapital,4.7109886,-74.072092
+Comoros,Moroni,countryCapital,-11.7172157,43.2473146
+Cook Islands,Avarua,countryCapital,-21.2129007,-159.7823059
+Costa Rica,San José,countryCapital,9.9280694,-84.0907246
+Croatia,Zagreb,countryCapital,45.8150108,15.981919
+Cuba,Havana,countryCapital,23.1135925,-82.3665956
+Curaçao,Willemstad,countryCapital,12.1224221,-68.8824233
+Cyprus,Nicosia,countryCapital,35.1855659,33.3822764
+Czech Republic,Prague,countryCapital,50.0755381,14.4378005
+Côte d'Ivoire,Yamoussoukro,countryCapital,6.8276228,-5.2893433
+Democratic Republic of the Congo,Kinshasa,countryCapital,-4.4419311,15.2662931
+Denmark,Copenhagen,countryCapital,55.6760968,12.5683371
+Djibouti,Djibouti,countryCapital,11.5720765,43.1456475
+Dominica,Roseau,countryCapital,15.3091676,-61.3793554
+Dominican Republic,Santo Domingo,countryCapital,18.4860575,-69.9312117
+East Timor (Timor-Leste),Dili,countryCapital,-8.5568557,125.5603143
+Easter Island,Hanga Roa,countryCapital,-27.15,-109.4333
+Ecuador,Quito,countryCapital,-0.1806532,-78.4678382
+Egypt,Cairo,countryCapital,30.0444196,31.2357116
+El Salvador,San Salvador,countryCapital,13.6929403,-89.2181911
+Equatorial Guinea,Malabo,countryCapital,3.7504118,8.7371039
+Eritrea,Asmara,countryCapital,15.3228767,38.9250517
+Estonia,Tallinn,countryCapital,59.4369608,24.7535746
+Ethiopia,Addis Ababa,countryCapital,8.9806034,38.7577605
+Falkland Islands,Stanley,countryCapital,-51.6977129,-57.8516627
+Faroe Islands,Tórshavn,countryCapital,62.007864,-6.7909816
+Federated States of Micronesia,Palikir,countryCapital,6.9147118,158.1610274
+Fiji,Suva,countryCapital,-18.1248086,178.4500789
+Finland,Helsinki,countryCapital,60.1698557,24.938379
+France,Paris,countryCapital,48.856614,2.3522219
+French Guiana,Cayenne,countryCapital,4.92242,-52.3134531
+French Polynesia,Papeete,countryCapital,-17.5516251,-149.5584758
+Gabon,Libreville,countryCapital,0.4161976,9.4672676
+Gambia,Banjul,countryCapital,13.4548761,-16.5790323
+Georgia,Tbilisi,countryCapital,41.7151377,44.827096
+Germany,Berlin,countryCapital,52.5200066,13.404954
+Ghana,Accra,countryCapital,5.6037168,-0.1869644
+Gibraltar,Gibraltar,countryCapital,36.1407734,-5.3535994
+Greece,Athens,countryCapital,37.9838096,23.7275388
+Greenland,Nuuk,countryCapital,64.1814099,-51.694138
+Grenada,St. George's,countryCapital,12.0560975,-61.7487996
+Guam,Hagåtña,countryCapital,13.4762824,144.7502228
+Guatemala,Guatemala City,countryCapital,14.6349149,-90.5068824
+Guernsey,St. Peter Port,countryCapital,49.460563,-2.533856
+Guinea,Conakry,countryCapital,9.6411855,-13.5784012
+Guinea-Bissau,Bissau,countryCapital,11.8816553,-15.6177942
+Guyana,Georgetown,countryCapital,6.8012793,-58.1551255
+Haiti,Port-au-Prince,countryCapital,18.594395,-72.3074326
+Honduras,Tegucigalpa,countryCapital,14.0722751,-87.192136
+Hungary,Budapest,countryCapital,47.497912,19.040235
+Iceland,Reykjavík,countryCapital,64.1265206,-21.8174393
+India,New Delhi,countryCapital,28.6139391,77.2090212
+Indonesia,Jakarta,countryCapital,-6.2087634,106.845599
+Iran,Tehran,countryCapital,35.6891975,51.3889736
+Iraq,Baghdad,countryCapital,33.3128057,44.3614875
+Ireland,Dublin,countryCapital,53.3498053,-6.2603097
+Isle of Man,Douglas,countryCapital,54.1523372,-4.4861228
+Israel,Jerusalem,countryCapital,31.768319,35.21371
+Italy,Rome,countryCapital,41.9027835,12.4963655
+Jamaica,Kingston,countryCapital,18.0178743,-76.8099041
+Japan,Tokyo,countryCapital,35.7090259,139.7319925
+Jersey,St. Helier,countryCapital,49.1805019,-2.103233
+Jordan,Amman,countryCapital,31.9453666,35.9283716
+Kazakhstan,Astana,countryCapital,51.1605227,71.4703558
+Kenya,Nairobi,countryCapital,-1.2920659,36.8219462
+Kiribati,Tarawa,countryCapital,1.3290526,172.9790528
+Kosovo,Pristina,countryCapital,42.6629138,21.1655028
+Kuwait,Kuwait City,countryCapital,29.375859,47.9774052
+Kyrgyzstan,Bishkek,countryCapital,42.8746212,74.5697617
+Laos,Vientiane,countryCapital,17.9757058,102.6331035
+Latvia,Riga,countryCapital,56.9496487,24.1051864
+Lebanon,Beirut,countryCapital,33.8937913,35.5017767
+Lesotho,Maseru,countryCapital,-29.3632188,27.5143603
+Liberia,Monrovia,countryCapital,6.2907432,-10.7605239
+Libya,Tripoli,countryCapital,32.8872094,13.1913383
+Liechtenstein,Vaduz,countryCapital,47.1410303,9.5209277
+Lithuania,Vilnius,countryCapital,54.6871555,25.2796514
+Luxembourg,Luxembourg,countryCapital,49.611621,6.1319346
+Macedonia,Skopje,countryCapital,41.9973462,21.4279956
+Madagascar,Antananarivo,countryCapital,-18.8791902,47.5079055
+Malawi,Lilongwe,countryCapital,-13.9626121,33.7741195
+Malaysia,Kuala Lumpur,countryCapital,3.139003,101.686855
+Maldives,Malé,countryCapital,4.1754959,73.5093474
+Mali,Bamako,countryCapital,12.6392316,-8.0028892
+Malta,Valletta,countryCapital,35.8989085,14.5145528
+Marshall Islands,Majuro,countryCapital,7.0921515,171.3825582
+Mauritania,Nouakchott,countryCapital,18.0735299,-15.9582372
+Mauritius,Port Louis,countryCapital,-20.1608912,57.5012222
+Mexico,Mexico City,countryCapital,19.4326077,-99.133208
+Moldova,Chisinau,countryCapital,47.0104529,28.8638103
+Monaco,Monaco,countryCapital,43.737411,7.420816
+Mongolia,Ulaanbaatar,countryCapital,47.8863988,106.9057439
+Montenegro,Podgorica,countryCapital,42.4304196,19.2593642
+Montserrat,Plymouth,countryCapital,16.706523,-62.215738
+Morocco,Rabat,countryCapital,33.9715904,-6.8498129
+Mozambique,Maputo,countryCapital,-25.891968,32.6051351
+Myanmar,Naypyidaw,countryCapital,19.7633057,96.0785104
+Nagorno-Karabakh Republic,Stepanakert,countryCapital,39.8267001,46.7560068
+Namibia,Windhoek,countryCapital,-22.5608807,17.0657549
+Nauru,Yaren,countryCapital,-0.5466857,166.9210913
+Nepal,Kathmandu,countryCapital,27.7172453,85.3239605
+Netherlands,Amsterdam,countryCapital,52.3702157,4.8951679
+New Caledonia,Nouméa,countryCapital,-22.2558234,166.4505243
+New Zealand,Wellington,countryCapital,-41.2864603,174.776236
+Nicaragua,Managua,countryCapital,12.1149926,-86.2361744
+Niger,Niamey,countryCapital,13.5115963,2.1253854
+Nigeria,Abuja,countryCapital,9.0764785,7.398574
+Niue,Alofi,countryCapital,-19.0553711,-169.9178709
+Norfolk Island,Kingston,countryCapital,-29.0563937,167.959588
+North Korea,Pyongyang,countryCapital,39.0392193,125.7625241
+Northern Cyprus,Nicosia,countryCapital,35.1855659,33.3822764
+United Kingdom Northern Ireland,Belfast,countryCapital,54.597285,-5.93012
+Northern Mariana Islands,Saipan,countryCapital,15.177801,145.750967
+Norway,Oslo,countryCapital,59.9138688,10.7522454
+Oman,Muscat,countryCapital,23.58589,58.4059227
+Pakistan,Islamabad,countryCapital,33.7293882,73.0931461
+Palau,Ngerulmud,countryCapital,7.5003835,134.624289
+Palestine,Jerusalem,countryCapital,31.768319,35.21371
+Panama,Panama City,countryCapital,9.1011785,-79.4028639
+Papua New Guinea,Port Moresby,countryCapital,-9.4438004,147.1802671
+Paraguay,Asunción,countryCapital,-25.2637399,-57.575926
+Peru,Lima,countryCapital,-12.046374,-77.0427934
+Philippines,Manila,countryCapital,14.5995124,120.9842195
+Pitcairn Islands,Adamstown,countryCapital,-25.0662897,-130.1004636
+Poland,Warsaw,countryCapital,52.2296756,21.0122287
+Portugal,Lisbon,countryCapital,38.7222524,-9.1393366
+Puerto Rico,San Juan,countryCapital,18.4655394,-66.1057355
+Qatar,Doha,countryCapital,25.2854473,51.5310398
+Republic of China (Taiwan),Taipei,countryCapital,25.0329694,121.5654177
+Republic of the Congo,Brazzaville,countryCapital,-4.2633597,15.2428853
+Romania,Bucharest,countryCapital,44.4267674,26.1025384
+Russia,Moscow,countryCapital,55.755826,37.6173
+Rwanda,Kigali,countryCapital,-1.9705786,30.1044288
+Saint Barthélemy,Gustavia,countryCapital,17.8964345,-62.852201
+Saint Helena,Jamestown,countryCapital,-15.9286343,-5.7151749
+Saint Kitts and Nevis,Basseterre,countryCapital,17.3026058,-62.7176924
+Saint Lucia,Castries,countryCapital,14.0101094,-60.9874687
+Saint Martin,Marigot,countryCapital,18.0675189,-63.0824656
+Saint Pierre and Miquelon,St. Pierre,countryCapital,46.7758459,-56.1806363
+Saint Vincent and the Grenadines,Kingstown,countryCapital,13.1600249,-61.2248157
+Samoa,Apia,countryCapital,-13.8506958,-171.7513551
+San Marino,San Marino,countryCapital,43.9355907,12.4472806
+Saudi Arabia,Riyadh,countryCapital,24.7135517,46.6752957
+Scotland,Edinburgh,countryCapital,55.953252,-3.188267
+Senegal,Dakar,countryCapital,14.7645042,-17.3660286
+Serbia,Belgrade,countryCapital,44.786568,20.4489216
+Seychelles,Victoria,countryCapital,-4.619143,55.4513149
+Sierra Leone,Freetown,countryCapital,8.4656765,-13.2317225
+Singapore,Singapore,countryCapital,1.3553794,103.8677444
+Sint Maarten,Philipsburg,countryCapital,18.0295839,-63.0471371
+Slovakia,Bratislava,countryCapital,48.1485965,17.1077477
+Slovenia,Ljubljana,countryCapital,46.0569465,14.5057515
+Solomon Islands,Honiara,countryCapital,-9.4456381,159.9728999
+Somalia,Mogadishu,countryCapital,2.0469343,45.3181623
+Somaliland,Hargeisa,countryCapital,9.562389,44.0770134
+South Africa,Pretoria,countryCapital,-25.7478676,28.2292712
+South Georgia and the South Sandwich Islands,Grytviken,countryCapital,-54.281149,-36.5087385
+South Korea,Seoul,countryCapital,37.566535,126.9779692
+South Ossetia,Tskhinvali,countryCapital,42.2214597,43.9644051
+South Sudan South Sudan,Juba,countryCapital,4.859363,31.57125
+Spain,Madrid,countryCapital,40.4167754,-3.7037902
+Sri Lanka,Sri Jayawardenapura Kotte,countryCapital,6.8940029,79.9051565
+Sudan,Khartoum,countryCapital,15.5006544,32.5598994
+Suriname,Paramaribo,countryCapital,5.8520355,-55.2038278
+Swaziland,Mbabane,countryCapital,-26.3054482,31.1366715
+Sweden,Stockholm,countryCapital,59.3293235,18.0685808
+Switzerland,Bern,countryCapital,46.9479739,7.4474468
+Syria,Damascus,countryCapital,33.5138073,36.2765279
+São Tomé and Príncipe,São Tomé,countryCapital,0.3301924,6.733343
+Tajikistan,Dushanbe,countryCapital,38.5597722,68.7870384
+Tanzania,Dodoma,countryCapital,-6.162959,35.7516069
+Thailand,Bangkok,countryCapital,13.7563309,100.5017651
+Togo,Lomé,countryCapital,6.1724969,1.2313618
+Tonga,Nukuʻalofa,countryCapital,-21.1393418,-175.204947
+Transnistria,Tiraspol,countryCapital,46.848185,29.596805
+Trinidad and Tobago,Port of Spain,countryCapital,10.6549013,-61.5019256
+Tristan da Cunha,Edinburgh of the Seven Seas,countryCapital,-37.0680421,-12.3113147
+Tunisia,Tunis,countryCapital,36.8064948,10.1815316
+Turkey,Ankara,countryCapital,39.9333635,32.8597419
+Turkmenistan,Ashgabat,countryCapital,37.9600766,58.3260629
+Turks and Caicos Islands,Cockburn Town,countryCapital,21.4674584,-71.1389101
+Tuvalu,Funafuti,countryCapital,-8.5200657,179.198128
+Uganda,Kampala,countryCapital,0.3475964,32.5825197
+Ukraine,Kiev,countryCapital,50.4501,30.5234
+United Arab Emirates,Abu Dhabi,countryCapital,24.2991738,54.6972774
+United Kingdom; England,London,countryCapital,51.5073509,-0.1277583
+United States,"Washington, D.C.",countryCapital,38.9071923,-77.0368707
+United States Virgin Islands,Charlotte Amalie,countryCapital,18.3419004,-64.9307007
+Uruguay,Montevideo,countryCapital,-34.9011127,-56.1645314
+Uzbekistan,Tashkent,countryCapital,41.2994958,69.2400734
+Vanuatu,Port Vila,countryCapital,-17.7332512,168.3273245
+Vatican City,Vatican City,countryCapital,41.9021788,12.4536007
+Venezuela,Caracas,countryCapital,10.4805937,-66.9036063
+Vietnam,Hanoi,countryCapital,21.0277644,105.8341598
+Wales,Cardiff,countryCapital,51.481581,-3.17909
+Wallis and Futuna,Mata-Utu,countryCapital,-13.2825091,-176.1764475
+Western Sahara,El Aaiún,countryCapital,27.1252867,-13.1625005
+Yemen,Sanaá,countryCapital,15.3694451,44.1910066
+Zambia,Lusaka,countryCapital,-15.3875259,28.3228165
+Zimbabwe,Harare,countryCapital,-17.8251657,31.03351
+Spain,Susqueda,,42.0405288,2.5052892
+Spain,Salamanca,,40.9701039,-5.6635397
+Spain,Burgos,,42.3439925,-3.696906
+Spain,Segovia,,40.9429032,-4.1088069
+Spain,Valencia,,39.4699075,-0.3762881
+Spain,Barcelona,,41.3850639,2.1734035
+Spain,Sevilla,,37.3890924,-5.9844589
+Spain,Granada,,37.1773363,-3.5985571
+Spain,Bilbao,,43.2630126,-2.9349852
+Spain,Malaga,,36.721261,-4.4212655
+Spain,A Coruña,,43.3623436,-8.4115401
+Portugal,Oporto,,41.1579438,-8.6291053
+Spain,Gijón,,43.5322015,-5.6611195
+Spain,Santander,,43.4623057,-3.8099803
+Spain,Valladolid,,41.652251,-4.7245321
+Spain,Zaragoza,,41.6488226,-0.8890853
+Spain,Murcia,,37.9922399,-1.1306544
+Spain,Badajoz,,38.8794495,-6.9706535
+Spain,Santiago de Compostela,,42.8782132,-8.5448445
+Spain,Vigo,,42.2405989,-8.7207268
+Spain,Ourense,,42.3357893,-7.863881
+Spain,Pontevedra,,42.4298846,-8.6446202
+Spain,Girona,,41.9794005,2.8214264
+Spain,Tarragona,,41.1188827,1.2444909
+Spain,Vic,,41.9304373,2.2544335
+Spain,Almería,,36.834047,-2.4637136
+Spain,Jaen,,37.7795941,-3.7849057
+Spain,Cordoba,,37.8881751,-4.7793835
+Spain,Badajoz,,38.8794495,-6.9706535
+Spain,León,,42.5987263,-5.5670959
+Spain,Oviedo,,43.3619145,-5.8493887
+Spain,Huelva,,37.261421,-6.9447224
+Spain,Palma de Mallorca,,39.5696005,2.6501603
+Spain,Santa Cruz de Tenerife,,28.4636296,-16.2518467
+Spain,Las Palmas de Gran Canaria,,28.1235459,-15.4362574
+Spain,Ibiza,,38.9067339,1.4205983
+Spain,Mahón,,39.8873296,4.2596195
+Spain,Teruel,,40.3456879,-1.1064345
+United States,New York,,40.7127837,-74.0059413
+United States,Los Angeles,,34.0522342,-118.2436849
+United States,Las Vegas,,36.1147074,-115.1728497
+United States,Miami,,25.7616798,-80.1917902
+United States,Nashville,,36.1626638,-86.7816016
+United States,Kansas City,,39.0997265,-94.5785667
+United States,Toronto,,40.4642335,-80.6009058
+United States,Detroit,,42.331427,-83.0457538
+United States,Dallas,,32.7766642,-96.7969879
+United States,San Francisco,,37.7749295,-122.4194155
+United States,Portland,,45.5230622,-122.6764816
+United States,Seattle,,47.6062095,-122.3320708
+United States,San Diego,,32.715738,-117.1610838
+United Kingdom;England,Leeds,,53.8007554,-1.5490774
+United Kingdom;England,Manchester,,53.4807593,-2.2426305
+United Kingdom;England,Glasgow,,54.2277044,-2.7707057
+United Kingdom;England,Oxford,,51.7520209,-1.2577263
+United Kingdom;England,Liverpool,,53.4083714,-2.9915726
+Canada;Ontario,Toronto,,43.653226,-79.3831843
