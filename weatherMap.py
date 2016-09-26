@@ -21,7 +21,7 @@ apigooglemaps=opts.apigooglemaps
 writeCSV=False
 
 #Center defaut map in Europe and zoom 6 times
-gmap = gmplot.GoogleMapPlotter(48.51, 2.2, 7)
+gmap = gmplot.GoogleMapPlotter(40.4167754, -3.7037902, 7)
 owm = pyowm.OWM(api)
 df = pd.read_csv('country-list-coordinate.csv')
 df.head()
