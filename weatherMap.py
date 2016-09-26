@@ -36,7 +36,7 @@ for index, row in df.iterrows():
       df.loc[index,"longitude"] = lng
   iterate = True
   counter = 0
-  while (iterate and counter < 2):
+  while (iterate and counter < 1):
     try:
         print "Retrieving information of city " + loc_city + " latitude: " + str(df.loc[index,"latitude"]) + " longitude: " + str(df.loc[index,"longitude"])
         observation = owm.weather_at_coords(float(df.loc[index,"latitude"]),float(df.loc[index,"longitude"]))
@@ -49,24 +49,38 @@ for index, row in df.iterrows():
         loc_city_html = loc_city_html.encode('ascii', 'xmlcharrefreplace')
 
         temp = jsonloads["temperature"]["temp"] - 273.15
-        text = '<h1><b>Weather forecast for ' + loc_city_html + '</b></h1><p></p><p><b>Current</b> ' + str(jsonloads['detailed_status']) + ' ' + str(temp) + ' C'
+
+        #Header
+        color = gmplot.icon_weather_codes.get(jsonloads['detailed_status'], jsonloads['detailed_status'])
+        image = '<img src="markers/%s.png" alt="%s">' % (color,jsonloads['detailed_status'])
+        #text = '<h1><b>Weather forecast for ' + loc_city_html + '</b></h1><p></p><p><b>Current</b> ' + str(jsonloads['detailed_status']) + ' ' + str(temp) + ' C'
+        #text = '<h1><b>Weather forecast for ' + loc_city_html + '</b></h1><p></p><p><b>Current Status</b> ' + image + ' ' + str(temp) + ' C'
+        text = '<h1><b>' + loc_city_html +  ' ' + str(temp) + ' C' +  ' ' + image + '</b></h1>'
 
         fc = owm.daily_forecast_at_coords(float(df.loc[index,"latitude"]),float(df.loc[index,"longitude"]))
         fcweather = fc.get_forecast()
         jsonfcweather = fcweather.to_JSON()
         jsonfcweatherloads = json.loads(jsonfcweather)
 
+        #Body table
+        text = text + '<table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th></tr>'
         for s in jsonfcweatherloads['weathers']:
             maxtemp = s['temperature']['max'] - 273.15
             mintemp = s['temperature']['min'] - 273.15
-            text = text + '<br>' + '<b>' + time.ctime(int(s['reference_time'])).rsplit(' ', 2)[0] + '</b>' + ' ' + s['detailed_status'] + ' <b>max temp</b> ' + str(maxtemp) + ' C ' + '<b>min temp</b> ' + str(mintemp) + ' C'
-        text = text + '</p>'
+            color = gmplot.icon_weather_codes.get(s['detailed_status'], s['detailed_status'])
+            image = '<img src="markers/%s.png" alt="%s">' % (color,s['detailed_status'])
+            #text = text + '<br>' + '<b>' + time.ctime(int(s['reference_time'])).rsplit(' ', 2)[0] + '</b>' + ' ' + s['detailed_status'] + ' <b>max temp</b> ' + str(maxtemp) + ' C ' + '<b>min temp</b> ' + str(mintemp) + ' C ' + image
+            text = text + '<tr>' + '<td>' + time.ctime(int(s['reference_time'])).rsplit(' ', 2)[0] + '</td>' + '<td>' + str(maxtemp) + '</td>' + '<td>' + str(mintemp) + '</td>' + '<td>' + image + '</td>' +  '</tr>'
+        text = text + '</table>'
+        #text = text + '</p>'
+
 
         gmap.marker(float(df.loc[index,"latitude"]), float(df.loc[index,"longitude"]), str(jsonloads['detailed_status']) ,title=text)
         iterate = False
     except:
         iterate = True
         counter = counter + 1
+        time.sleep(0)
 
 if(writeCSV):
     df.to_csv('country-list-coordinate.csv', mode = 'w', index=False, columns=['country','capital','type','latitude','longitude'])
