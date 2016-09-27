@@ -20,7 +20,7 @@ icon_weather_codes = {
 'rain' : '09d',
 'moderate rain' : '09d',
 'heavy intensity rain' : '09d',
-'light rain': '10d',
+'light rain': '04d',
 'thunderstorm' : '11d',
 'snow' : '13d',
 'mist' : '50d'
