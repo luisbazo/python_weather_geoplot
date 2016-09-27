@@ -42,7 +42,7 @@ class GoogleMapPlotter(gmplot.GoogleMapPlotter):
             '<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />\n')
         f.write(
             '<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>\n')
-        f.write('<title>LUBAGA - Luis Bazo Garcia - The Weather Map </title>\n')
+        f.write('<title>The Weather Map - luis.bazo@gmail.com </title>\n')
         f.write('<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=%s&libraries=visualization&sensor=true_or_false"></script>\n' % api)
         f.write('<script type="text/javascript">\n')
         f.write('\tfunction initialize() {\n')

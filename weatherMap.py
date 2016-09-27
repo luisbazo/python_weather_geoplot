@@ -55,7 +55,8 @@ for index, row in df.iterrows():
         image = '<img src="markers/%s.png" alt="%s">' % (color,jsonloads['detailed_status'])
         #text = '<h1><b>Weather forecast for ' + loc_city_html + '</b></h1><p></p><p><b>Current</b> ' + str(jsonloads['detailed_status']) + ' ' + str(temp) + ' C'
         #text = '<h1><b>Weather forecast for ' + loc_city_html + '</b></h1><p></p><p><b>Current Status</b> ' + image + ' ' + str(temp) + ' C'
-        text = '<h1><b>' + loc_city_html +  ' ' + str(temp) + ' C' +  ' ' + image + '</b></h1>'
+        #text = '<h1><b>' + loc_city_html +  ' ' + str(temp) + ' C' +  ' ' + image + '</b></h1>'
+        text = '<h1><b>' + loc_city_html +  ' ' + image + '</b></h1>'
 
         fc = owm.daily_forecast_at_coords(float(df.loc[index,"latitude"]),float(df.loc[index,"longitude"]))
         fcweather = fc.get_forecast()
