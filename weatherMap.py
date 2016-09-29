@@ -70,11 +70,8 @@ for index, row in df.iterrows():
             mintemp = s['temperature']['min'] - 273.15
             color = gmplot.icon_weather_codes.get(s['detailed_status'], s['detailed_status'])
             image = '<img src="markers/%s.png" alt="%s">' % (color,s['detailed_status'])
-            #text = text + '<br>' + '<b>' + time.ctime(int(s['reference_time'])).rsplit(' ', 2)[0] + '</b>' + ' ' + s['detailed_status'] + ' <b>max temp</b> ' + str(maxtemp) + ' C ' + '<b>min temp</b> ' + str(mintemp) + ' C ' + image
             text = text + '<tr>' + '<td>' + time.ctime(int(s['reference_time'])).rsplit(' ', 2)[0] + '</td>' + '<td>' + str(maxtemp) + '</td>' + '<td>' + str(mintemp) + '</td>' + '<td>' + image + '</td>' +  '</tr>'
         text = text + '</table>'
-        #text = text + '</p>'
-
 
         gmap.marker(float(df.loc[index,"latitude"]), float(df.loc[index,"longitude"]), str(jsonloads['detailed_status']) ,title=text)
         iterate = False

@@ -20,7 +20,6 @@ class GoogleMapPlotter(gmplot.GoogleMapPlotter):
         gmplot.heatmap_points = []
         gmplot.radpoints = []
         gmplot.gridsetting = None
-        #gmplot.coloricon = os.path.join(os.path.dirname(__file__), 'markers/%s.png')
         gmplot.coloricon = 'markers/%s.png'
         gmplot.color_dict = mpl_color_map
         gmplot.html_color_codes = html_color_codes
@@ -88,25 +87,11 @@ class GoogleMapPlotter(gmplot.GoogleMapPlotter):
         f.write('\t\tvar img = new google.maps.MarkerImage(\'%s\');\n' %
             (geoplot.coloricon % color))
         f.write('\t\tvar marker = new google.maps.Marker({\n')
-        #f.write('\t\ttitle: "%s",\n' % title)
         f.write('\t\ticon: img,\n')
         f.write('\t\tposition: latlng\n')
         f.write('\t\t});\n')
         f.write('\t\tmarker.setMap(map);\n')
         f.write('\n')
-
-        #f.write('\t\tmarker.addListener(\'click\', function() {\n')
-        #f.write('\t\tif (this.getAnimation() !== null) {\n')
-        #f.write('\t\t\tthis.setAnimation(null);\n')
-        #f.write('\t\t} else {\n')
-        #f.write('\t\t\tthis.setAnimation(google.maps.Animation.BOUNCE);\n')
-        #f.write('\t\t}\n')
-        #f.write('\t\tvar infoWindow = new google.maps.InfoWindow({map: map});\n')
-        #f.write('\t\tinfoWindow.setContent(\'%s\');\n' % title)
-        #f.write('\t\tinfoWindow.setPosition(latlng);\n')
-        #f.write('\t\tinfoWindow.open(map, this);\n')
-        #f.write('\t\t});\n');
-        #f.write('\n')
 
         f.write('\t\tmarker.addListener(\'click\', function() {\n')
         f.write('\t\tvar infoWindow = new google.maps.InfoWindow({map: map});\n')
@@ -114,9 +99,6 @@ class GoogleMapPlotter(gmplot.GoogleMapPlotter):
         f.write('\t\tinfoWindow.setPosition(latlng);\n')
         f.write('\t\tinfoWindow.open(map, this);\n')
         f.write('\t\tthis.setAnimation(google.maps.Animation.BOUNCE);\n')
-        #f.write('\t\tsetTimeout(function() {\n')
-        #f.write('\t\t\tmarker.setAnimation(null);\n')
-        #f.write('\t\t}, 3000);\n')
         f.write('\t\t});\n');
         f.write('\n')
 
