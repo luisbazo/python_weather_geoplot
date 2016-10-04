@@ -66,6 +66,16 @@ for index, row in df.iterrows():
         #Body table
         text = text + '<table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th></tr>'
         for s in jsonfcweatherloads['weathers']:
+            #If current time is newer than forecast time then forecast is not forecast anymore continue to next
+            if(time.time() > float(s['reference_time'])):
+                print "Skipping old forecast detected for city " + loc_city + " :Current time:" + time.ctime(time.time()) + " forecast time:" + time.ctime(int(s['reference_time']))
+                continue
+
+            #Skipping current day forecast
+            #if(time.ctime(time.time()).rsplit(' ', 2)[0] == time.ctime(int(s['reference_time'])).rsplit(' ', 2)[0]):
+            #    print "Skipping current day forecast detected for city " + loc_city + " :Current time:" + time.ctime(time.time()) + " forecast time:" + time.ctime(int(s['reference_time']))
+            #    continue
+
             maxtemp = s['temperature']['max'] - 273.15
             mintemp = s['temperature']['min'] - 273.15
             color = gmplot.icon_weather_codes.get(s['detailed_status'], s['detailed_status'])
