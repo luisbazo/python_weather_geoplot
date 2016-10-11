@@ -64,11 +64,11 @@ for index, row in df.iterrows():
         jsonfcweatherloads = json.loads(jsonfcweather)
 
         #Body table
-        text = text + '<table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th></tr>'
+        text = text + '<table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Wind (m/s)</th></tr>'
         for s in jsonfcweatherloads['weathers']:
             #If current time is newer than forecast time then forecast is not forecast anymore continue to next
             if(time.time() > float(s['reference_time'])):
-                print "Skipping old forecast detected for city " + loc_city + " :Current time:" + time.ctime(time.time()) + " forecast time:" + time.ctime(int(s['reference_time']))
+                #print "Skipping old forecast detected for city " + loc_city + " :Current time:" + time.ctime(time.time()) + " forecast time:" + time.ctime(int(s['reference_time']))
                 continue
 
             #Skipping current day forecast
@@ -80,7 +80,7 @@ for index, row in df.iterrows():
             mintemp = s['temperature']['min'] - 273.15
             color = gmplot.icon_weather_codes.get(s['detailed_status'], s['detailed_status'])
             image = '<img src="markers/%s.png" alt="%s">' % (color,s['detailed_status'])
-            text = text + '<tr>' + '<td>' + time.ctime(int(s['reference_time'])).rsplit(' ', 2)[0] + '</td>' + '<td>' + str(maxtemp) + '</td>' + '<td>' + str(mintemp) + '</td>' + '<td>' + image + '</td>' +  '</tr>'
+            text = text + '<tr>' + '<td align="center">' + time.ctime(int(s['reference_time'])).rsplit(' ', 2)[0] + '</td>' + '<td align="center">' + str(maxtemp) + '</td>' + '<td align="center">' + str(mintemp) + '</td>' + '<td align="center">' + image + '</td>' + '<td align="center">' + str(s['wind']['speed']) + '</td>' + '</tr>'
         text = text + '</table>'
 
         gmap.marker(float(df.loc[index,"latitude"]), float(df.loc[index,"longitude"]), str(jsonloads['detailed_status']) ,title=text)
