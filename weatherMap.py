@@ -36,9 +36,9 @@ for index, row in df.iterrows():
       df.loc[index,"longitude"] = lng
   iterate = True
   counter = 0
-  while (iterate and counter < 1):
+  while (iterate and counter < 3):
     try:
-        print "Retrieving information of city " + loc_city + " latitude: " + str(df.loc[index,"latitude"]) + " longitude: " + str(df.loc[index,"longitude"])
+        print "INFO: Retrieving information of city " + loc_city + " latitude: " + str(df.loc[index,"latitude"]) + " longitude: " + str(df.loc[index,"longitude"])
         observation = owm.weather_at_coords(float(df.loc[index,"latitude"]),float(df.loc[index,"longitude"]))
         w = observation.get_weather()
         jsonweather = w.to_JSON()
@@ -87,6 +87,7 @@ for index, row in df.iterrows():
         gmap.marker(float(df.loc[index,"latitude"]), float(df.loc[index,"longitude"]), str(jsonloads['detailed_status']) ,title=text)
         iterate = False
     except:
+        print "ERROR: Exception on Retrieving information of city " + loc_city + " latitude: " + str(df.loc[index,"latitude"]) + " longitude: " + str(df.loc[index,"longitude"])
         iterate = True
         counter = counter + 1
         time.sleep(0)
