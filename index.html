@@ -26,7 +26,23 @@
 			map.setCenter(pos);
 			});
 		}
-		var latlng = new google.maps.LatLng(-14.275632, -170.702036);
+		var latlng = new google.maps.LatLng(9.101178, -79.402864);
+		var img = new google.maps.MarkerImage('markers/03d.png');
+		var marker = new google.maps.Marker({
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		marker.addListener('click', function() {
+		var infoWindow = new google.maps.InfoWindow({map: map});
+		infoWindow.setContent('<h1><b>Panama City,Panama <img src="markers/03d.png" alt="scattered clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">28.11</td><td align="center">24.57</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.17</td><td align="center">10</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">28.23</td><td align="center">24.56</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.79</td><td align="center">8</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">30.12</td><td align="center">25.02</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.26</td><td align="center">2</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">28.26</td><td align="center">24.71</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">5.01</td><td align="center">0</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">27.64</td><td align="center">24.87</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">5.53</td><td align="center">5</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">28.84</td><td align="center">24.48</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.04</td><td align="center">4</td></tr></table>');
+		infoWindow.setPosition(latlng);
+		infoWindow.open(map, this);
+		this.setAnimation(google.maps.Animation.BOUNCE);
+		});
+
+		var latlng = new google.maps.LatLng(34.555349, 69.207486);
 		var img = new google.maps.MarkerImage('markers/02d.png');
 		var marker = new google.maps.Marker({
 		icon: img,
@@ -36,45 +52,13 @@
 
 		marker.addListener('click', function() {
 		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Pago Pago,American Samoa <img src="markers/02d.png" alt="few clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">28.91</td><td align="center">27.69</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.3</td><td align="center">13</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">29.04</td><td align="center">28.3</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.25</td><td align="center">24</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">28.48</td><td align="center">27.81</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">17.32</td><td align="center">9</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">28.67</td><td align="center">28.45</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.17</td><td align="center">4</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">28.6</td><td align="center">27.51</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">12.99</td><td align="center">10</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">29.02</td><td align="center">28.17</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.14</td><td align="center">21</td></tr></table>');
-		infoWindow.setPosition(latlng);
-		infoWindow.open(map, this);
-		this.setAnimation(google.maps.Animation.BOUNCE);
-		});
-
-		var latlng = new google.maps.LatLng(23.810332, 90.412518);
-		var img = new google.maps.MarkerImage('markers/haze.png');
-		var marker = new google.maps.Marker({
-		icon: img,
-		position: latlng
-		});
-		marker.setMap(map);
-
-		marker.addListener('click', function() {
-		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Dhaka,Bangladesh <img src="markers/haze.png" alt="haze"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">30.1</td><td align="center">21.56</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">14.82</td><td align="center">27</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">32.64</td><td align="center">24.19</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">7.68</td><td align="center">21</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">33.05</td><td align="center">24.21</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">12.13</td><td align="center">19</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">32.18</td><td align="center">25.42</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">8.08</td><td align="center">19</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">33.78</td><td align="center">25.86</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.37</td><td align="center">21</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">35.66</td><td align="center">26.95</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.85</td><td align="center">19</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">34.92</td><td align="center">25.96</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.7</td><td align="center">18</td></tr></table>');
+		infoWindow.setContent('<h1><b>Kabul,Afghanistan <img src="markers/02d.png" alt="few clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">10.86</td><td align="center">1.69</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.74</td><td align="center">1</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">8.52</td><td align="center">0.73</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.58</td><td align="center">3</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">9.54</td><td align="center">0.36</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.39</td><td align="center">4</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">10.34</td><td align="center">2.76</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.79</td><td align="center">2</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">11.32</td><td align="center">2.53</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.04</td><td align="center">3</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">9.91</td><td align="center">2.65</td><td align="center"><img src="markers/sky is clear.png" alt="sky is clear"></td><td align="center">1.61</td><td align="center">3</td></tr><tr><td align="center">Thu Apr 27</td><td align="center">9.96</td><td align="center">1.79</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.83</td><td align="center">3</td></tr></table>');
 		infoWindow.setPosition(latlng);
 		infoWindow.open(map, this);
 		this.setAnimation(google.maps.Animation.BOUNCE);
 		});
 
 		var latlng = new google.maps.LatLng(27.472792, 89.639286);
-		var img = new google.maps.MarkerImage('markers/04d.png');
-		var marker = new google.maps.Marker({
-		icon: img,
-		position: latlng
-		});
-		marker.setMap(map);
-
-		marker.addListener('click', function() {
-		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Thimphu,Bhutan <img src="markers/04d.png" alt="broken clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">11.23</td><td align="center">1.51</td><td align="center"><img src="markers/light snow.png" alt="light snow"></td><td align="center">4.89</td><td align="center">0</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">12.79</td><td align="center">1.19</td><td align="center"><img src="markers/sky is clear.png" alt="sky is clear"></td><td align="center">1.72</td><td align="center">0</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">8.6</td><td align="center">1.45</td><td align="center"><img src="markers/light snow.png" alt="light snow"></td><td align="center">3.99</td><td align="center">2</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">18.68</td><td align="center">13.9</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">27.21</td><td align="center">2</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">18.53</td><td align="center">13.26</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">19.77</td><td align="center">3</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">19.31</td><td align="center">13.22</td><td align="center"><img src="markers/light snow.png" alt="light snow"></td><td align="center">8.16</td><td align="center">3</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">20.57</td><td align="center">11.46</td><td align="center"><img src="markers/light snow.png" alt="light snow"></td><td align="center">2.75</td><td align="center">4</td></tr></table>');
-		infoWindow.setPosition(latlng);
-		infoWindow.open(map, this);
-		this.setAnimation(google.maps.Animation.BOUNCE);
-		});
-
-		var latlng = new google.maps.LatLng(-15.794229, -47.882166);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
 		icon: img,
@@ -84,7 +68,7 @@
 
 		marker.addListener('click', function() {
 		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Bras&#237;lia,Brazil <img src="markers/01d.png" alt="clear sky"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">28.5</td><td align="center">19.72</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.55</td><td align="center">19</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">29.15</td><td align="center">20.26</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.05</td><td align="center">13</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">27.76</td><td align="center">19.23</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.69</td><td align="center">7</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">27.9</td><td align="center">18.78</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.78</td><td align="center">7</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">27.95</td><td align="center">19.61</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.85</td><td align="center">12</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">28.27</td><td align="center">17.02</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.5</td><td align="center">12</td></tr></table>');
+		infoWindow.setContent('<h1><b>Thimphu,Bhutan <img src="markers/01d.png" alt="clear sky"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">11.0</td><td align="center">0.74</td><td align="center"><img src="markers/sky is clear.png" alt="sky is clear"></td><td align="center">3.15</td><td align="center">2</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">8.65</td><td align="center">2.08</td><td align="center"><img src="markers/light snow.png" alt="light snow"></td><td align="center">2.71</td><td align="center">2</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">6.86</td><td align="center">3.71</td><td align="center"><img src="markers/light snow.png" alt="light snow"></td><td align="center">8.83</td><td align="center">2</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">18.72</td><td align="center">13.49</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">15.03</td><td align="center">3</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">20.66</td><td align="center">13.73</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">11.16</td><td align="center">2</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">22.22</td><td align="center">13.15</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.28</td><td align="center">3</td></tr><tr><td align="center">Thu Apr 27</td><td align="center">23.58</td><td align="center">12.79</td><td align="center"><img src="markers/light snow.png" alt="light snow"></td><td align="center">1.85</td><td align="center">3</td></tr></table>');
 		infoWindow.setPosition(latlng);
 		infoWindow.open(map, this);
 		this.setAnimation(google.maps.Animation.BOUNCE);
@@ -100,13 +84,29 @@
 
 		marker.addListener('click', function() {
 		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Bandar Seri Begawan,Brunei <img src="markers/04d.png" alt="broken clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">31.55</td><td align="center">24.96</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.89</td><td align="center">3</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">30.34</td><td align="center">23.57</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.11</td><td align="center">4</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">28.1</td><td align="center">24.29</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.25</td><td align="center">3</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">27.68</td><td align="center">24.85</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">7.21</td><td align="center">9</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">28.63</td><td align="center">25.26</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.34</td><td align="center">7</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">30.01</td><td align="center">25.87</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.45</td><td align="center">3</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">27.57</td><td align="center">25.59</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">6.66</td><td align="center">4</td></tr></table>');
+		infoWindow.setContent('<h1><b>Bandar Seri Begawan,Brunei <img src="markers/04d.png" alt="broken clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">32.82</td><td align="center">24.55</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.57</td><td align="center">3</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">30.92</td><td align="center">23.46</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.33</td><td align="center">4</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">30.08</td><td align="center">22.69</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.09</td><td align="center">4</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">29.67</td><td align="center">26.69</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.47</td><td align="center">3</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">29.76</td><td align="center">26.39</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.83</td><td align="center">4</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">29.22</td><td align="center">25.79</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">5.63</td><td align="center">6</td></tr><tr><td align="center">Thu Apr 27</td><td align="center">29.13</td><td align="center">25.69</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">7.76</td><td align="center">1</td></tr></table>');
 		infoWindow.setPosition(latlng);
 		infoWindow.open(map, this);
 		this.setAnimation(google.maps.Animation.BOUNCE);
 		});
 
 		var latlng = new google.maps.LatLng(-3.361378, 29.359878);
+		var img = new google.maps.MarkerImage('markers/01d.png');
+		var marker = new google.maps.Marker({
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		marker.addListener('click', function() {
+		var infoWindow = new google.maps.InfoWindow({map: map});
+		infoWindow.setContent('<h1><b>Bujumbura,Burundi <img src="markers/01d.png" alt="clear sky"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">20.86</td><td align="center">13.65</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">6.69</td><td align="center">2</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">20.93</td><td align="center">15.55</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">12.57</td><td align="center">2</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">20.99</td><td align="center">14.43</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">5.09</td><td align="center">3</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">21.79</td><td align="center">11.73</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.1</td><td align="center">4</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">19.97</td><td align="center">11.9</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">14.27</td><td align="center">4</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">23.11</td><td align="center">14.29</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.16</td><td align="center">5</td></tr></table>');
+		infoWindow.setPosition(latlng);
+		infoWindow.open(map, this);
+		this.setAnimation(google.maps.Animation.BOUNCE);
+		});
+
+		var latlng = new google.maps.LatLng(3.848032, 11.502075);
 		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
 		icon: img,
@@ -116,39 +116,7 @@
 
 		marker.addListener('click', function() {
 		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Bujumbura,Burundi <img src="markers/04d.png" alt="light rain"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">19.61</td><td align="center">15.57</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">10.55</td><td align="center">4</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">19.51</td><td align="center">16.63</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">10.79</td><td align="center">3</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">20.16</td><td align="center">15.41</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">13.19</td><td align="center">4</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">21.97</td><td align="center">15.01</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.62</td><td align="center">3</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">20.37</td><td align="center">12.6</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">6.91</td><td align="center">4</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">23.47</td><td align="center">12.41</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.16</td><td align="center">5</td></tr></table>');
-		infoWindow.setPosition(latlng);
-		infoWindow.open(map, this);
-		this.setAnimation(google.maps.Animation.BOUNCE);
-		});
-
-		var latlng = new google.maps.LatLng(19.286932, -81.367439);
-		var img = new google.maps.MarkerImage('markers/04d.png');
-		var marker = new google.maps.Marker({
-		icon: img,
-		position: latlng
-		});
-		marker.setMap(map);
-
-		marker.addListener('click', function() {
-		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>George Town,Cayman Islands <img src="markers/04d.png" alt="broken clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">25.6</td><td align="center">22.84</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">30.57</td><td align="center">24</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">24.61</td><td align="center">23.75</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">34.09</td><td align="center">25</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">27.31</td><td align="center">26.71</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.57</td><td align="center">20</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">27.55</td><td align="center">27.02</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.22</td><td align="center">19</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">27.0</td><td align="center">26.41</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.82</td><td align="center">16</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">26.47</td><td align="center">26.37</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.3</td><td align="center">15</td></tr></table>');
-		infoWindow.setPosition(latlng);
-		infoWindow.open(map, this);
-		this.setAnimation(google.maps.Animation.BOUNCE);
-		});
-
-		var latlng = new google.maps.LatLng(-12.145049, 96.821702);
-		var img = new google.maps.MarkerImage('markers/02d.png');
-		var marker = new google.maps.Marker({
-		icon: img,
-		position: latlng
-		});
-		marker.setMap(map);
-
-		marker.addListener('click', function() {
-		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>West Island,Cocos (Keeling) Islands <img src="markers/02d.png" alt="few clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">27.01</td><td align="center">25.11</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.85</td><td align="center">24</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">27.45</td><td align="center">26.54</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.37</td><td align="center">29</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">27.81</td><td align="center">26.8</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.74</td><td align="center">30</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">27.27</td><td align="center">26.8</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.73</td><td align="center">22</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">27.38</td><td align="center">26.85</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.39</td><td align="center">22</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">27.42</td><td align="center">26.9</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.97</td><td align="center">25</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">27.47</td><td align="center">27.02</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">5.81</td><td align="center">21</td></tr></table>');
+		infoWindow.setContent('<h1><b>Yaound&#233;,Cameroon <img src="markers/04d.png" alt="light rain"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">27.5</td><td align="center">21.75</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.25</td><td align="center">6</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">25.63</td><td align="center">19.92</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">7.09</td><td align="center">5</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">30.56</td><td align="center">20.63</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">10.74</td><td align="center">5</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">28.19</td><td align="center">21.88</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">8.79</td><td align="center">5</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">28.87</td><td align="center">21.81</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">6.15</td><td align="center">6</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">29.86</td><td align="center">21.62</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">5.84</td><td align="center">6</td></tr></table>');
 		infoWindow.setPosition(latlng);
 		infoWindow.open(map, this);
 		this.setAnimation(google.maps.Animation.BOUNCE);
@@ -164,7 +132,7 @@
 
 		marker.addListener('click', function() {
 		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Bogot&#225;,Colombia <img src="markers/04d.png" alt="broken clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">19.06</td><td align="center">8.99</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">5.47</td><td align="center">4</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">17.81</td><td align="center">9.41</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.75</td><td align="center">4</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">18.91</td><td align="center">12.43</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.1</td><td align="center">3</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">21.15</td><td align="center">11.68</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.48</td><td align="center">3</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">20.9</td><td align="center">13.11</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">7.3</td><td align="center">2</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">19.22</td><td align="center">12.52</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">5.48</td><td align="center">1</td></tr></table>');
+		infoWindow.setContent('<h1><b>Bogot&#225;,Colombia <img src="markers/04d.png" alt="light rain"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">17.5</td><td align="center">9.65</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.59</td><td align="center">4</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">18.79</td><td align="center">7.15</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.32</td><td align="center">4</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">21.07</td><td align="center">12.47</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.55</td><td align="center">2</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">21.51</td><td align="center">13.01</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.1</td><td align="center">1</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">19.14</td><td align="center">13.97</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">6.94</td><td align="center">2</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">19.64</td><td align="center">13.88</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">7.41</td><td align="center">1</td></tr></table>');
 		infoWindow.setPosition(latlng);
 		infoWindow.open(map, this);
 		this.setAnimation(google.maps.Animation.BOUNCE);
@@ -180,14 +148,46 @@
 
 		marker.addListener('click', function() {
 		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>San Jos&#233;,Costa Rica <img src="markers/04d.png" alt="light rain"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">24.15</td><td align="center">19.24</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">7.74</td><td align="center">3</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">24.45</td><td align="center">18.79</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.44</td><td align="center">3</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">27.26</td><td align="center">20.36</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.61</td><td align="center">1</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">27.8</td><td align="center">20.97</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.08</td><td align="center">1</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">26.7</td><td align="center">20.17</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">6.4</td><td align="center">1</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">26.22</td><td align="center">19.92</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.02</td><td align="center">2</td></tr></table>');
+		infoWindow.setContent('<h1><b>San Jos&#233;,Costa Rica <img src="markers/04d.png" alt="broken clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">24.41</td><td align="center">17.51</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.84</td><td align="center">3</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">26.78</td><td align="center">19.62</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.66</td><td align="center">3</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">26.97</td><td align="center">21.28</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.98</td><td align="center">2</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">28.66</td><td align="center">20.24</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.4</td><td align="center">1</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">28.99</td><td align="center">20.57</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.83</td><td align="center">1</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">27.64</td><td align="center">20.21</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.97</td><td align="center">1</td></tr></table>');
+		infoWindow.setPosition(latlng);
+		infoWindow.open(map, this);
+		this.setAnimation(google.maps.Animation.BOUNCE);
+		});
+
+		var latlng = new google.maps.LatLng(50.075538, 14.437800);
+		var img = new google.maps.MarkerImage('markers/01d.png');
+		var marker = new google.maps.Marker({
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		marker.addListener('click', function() {
+		var infoWindow = new google.maps.InfoWindow({map: map});
+		infoWindow.setContent('<h1><b>Prague,Czech Republic <img src="markers/01d.png" alt="clear sky"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">10.34</td><td align="center">2.2</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.48</td><td align="center">23</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">8.92</td><td align="center">3.81</td><td align="center"><img src="markers/sky is clear.png" alt="sky is clear"></td><td align="center">0.41</td><td align="center">24</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">7.86</td><td align="center">-0.22</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.83</td><td align="center">19</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">12.84</td><td align="center">3.47</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.61</td><td align="center">13</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">11.32</td><td align="center">4.95</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">7.27</td><td align="center">8</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">6.26</td><td align="center">3.54</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">8.66</td><td align="center">15</td></tr></table>');
+		infoWindow.setPosition(latlng);
+		infoWindow.open(map, this);
+		this.setAnimation(google.maps.Animation.BOUNCE);
+		});
+
+		var latlng = new google.maps.LatLng(6.827623, -5.289343);
+		var img = new google.maps.MarkerImage('markers/04d.png');
+		var marker = new google.maps.Marker({
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		marker.addListener('click', function() {
+		var infoWindow = new google.maps.InfoWindow({map: map});
+		infoWindow.setContent('<h1><b>Yamoussoukro,C&#244;te dIvoire <img src="markers/04d.png" alt="broken clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">33.55</td><td align="center">23.73</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.9</td><td align="center">10</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">33.18</td><td align="center">22.51</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">24.07</td><td align="center">10</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">32.71</td><td align="center">23.21</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.27</td><td align="center">11</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">30.64</td><td align="center">24.42</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">6.22</td><td align="center">14</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">29.52</td><td align="center">23.81</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">6.95</td><td align="center">13</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">28.61</td><td align="center">23.22</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">10.35</td><td align="center">14</td></tr></table>');
 		infoWindow.setPosition(latlng);
 		infoWindow.open(map, this);
 		this.setAnimation(google.maps.Animation.BOUNCE);
 		});
 
 		var latlng = new google.maps.LatLng(-4.441931, 15.266293);
-		var img = new google.maps.MarkerImage('markers/09d.png');
+		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
 		icon: img,
 		position: latlng
@@ -196,14 +196,14 @@
 
 		marker.addListener('click', function() {
 		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Kinshasa,Democratic Republic of the Congo <img src="markers/09d.png" alt="moderate rain"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">28.31</td><td align="center">21.95</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">6.13</td><td align="center">5</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">28.61</td><td align="center">23.09</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">7.08</td><td align="center">5</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">28.32</td><td align="center">21.91</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">9.18</td><td align="center">6</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">26.42</td><td align="center">22.26</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.42</td><td align="center">7</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">28.02</td><td align="center">22.13</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">17.16</td><td align="center">7</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">26.87</td><td align="center">22.21</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">29.68</td><td align="center">6</td></tr></table>');
+		infoWindow.setContent('<h1><b>Kinshasa,Democratic Republic of the Congo <img src="markers/04d.png" alt="light rain"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">27.0</td><td align="center">20.32</td><td align="center"><img src="markers/very heavy rain.png" alt="very heavy rain"></td><td align="center">56.48</td><td align="center">5</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">27.93</td><td align="center">22.6</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.8</td><td align="center">6</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">27.84</td><td align="center">23.13</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.4</td><td align="center">7</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">27.34</td><td align="center">21.97</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.74</td><td align="center">6</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">27.77</td><td align="center">22.2</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">18.76</td><td align="center">1</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">27.11</td><td align="center">22.24</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">15.9</td><td align="center">6</td></tr></table>');
 		infoWindow.setPosition(latlng);
 		infoWindow.open(map, this);
 		this.setAnimation(google.maps.Animation.BOUNCE);
 		});
 
 		var latlng = new google.maps.LatLng(18.486058, -69.931212);
-		var img = new google.maps.MarkerImage('markers/04d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
 		icon: img,
 		position: latlng
@@ -212,30 +212,14 @@
 
 		marker.addListener('click', function() {
 		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Santo Domingo,Dominican Republic <img src="markers/04d.png" alt="broken clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">24.05</td><td align="center">18.23</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.25</td><td align="center">5</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">24.95</td><td align="center">19.21</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.93</td><td align="center">4</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">25.61</td><td align="center">24.82</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">11.02</td><td align="center">17</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">26.85</td><td align="center">25.57</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.91</td><td align="center">12</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">28.0</td><td align="center">26.51</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.88</td><td align="center">11</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">27.87</td><td align="center">26.62</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.92</td><td align="center">11</td></tr></table>');
-		infoWindow.setPosition(latlng);
-		infoWindow.open(map, this);
-		this.setAnimation(google.maps.Animation.BOUNCE);
-		});
-
-		var latlng = new google.maps.LatLng(-8.556856, 125.560314);
-		var img = new google.maps.MarkerImage('markers/02d.png');
-		var marker = new google.maps.Marker({
-		icon: img,
-		position: latlng
-		});
-		marker.setMap(map);
-
-		marker.addListener('click', function() {
-		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Dili,East Timor (Timor-Leste) <img src="markers/02d.png" alt="few clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">28.79</td><td align="center">27.36</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.7</td><td align="center">5</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">28.68</td><td align="center">26.56</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">5.75</td><td align="center">10</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">28.96</td><td align="center">26.79</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.46</td><td align="center">4</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">30.23</td><td align="center">25.15</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.24</td><td align="center">3</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">30.18</td><td align="center">25.6</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.98</td><td align="center">5</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">29.51</td><td align="center">25.62</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.9</td><td align="center">8</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">29.92</td><td align="center">25.94</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.77</td><td align="center">5</td></tr></table>');
+		infoWindow.setContent('<h1><b>Santo Domingo,Dominican Republic <img src="markers/03d.png" alt="overcast clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">25.41</td><td align="center">19.5</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.89</td><td align="center">4</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">23.28</td><td align="center">18.95</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">14.65</td><td align="center">2</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">25.92</td><td align="center">24.58</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">23.27</td><td align="center">21</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">26.91</td><td align="center">25.69</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">6.5</td><td align="center">20</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">27.19</td><td align="center">26.22</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.17</td><td align="center">17</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">27.64</td><td align="center">26.48</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.03</td><td align="center">12</td></tr></table>');
 		infoWindow.setPosition(latlng);
 		infoWindow.open(map, this);
 		this.setAnimation(google.maps.Animation.BOUNCE);
 		});
 
 		var latlng = new google.maps.LatLng(-27.150000, -109.433300);
-		var img = new google.maps.MarkerImage('markers/04d.png');
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
 		icon: img,
 		position: latlng
@@ -244,7 +228,7 @@
 
 		marker.addListener('click', function() {
 		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Hanga Roa,Easter Island <img src="markers/04d.png" alt="broken clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">24.4</td><td align="center">21.49</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.29</td><td align="center">12</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">23.46</td><td align="center">21.34</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.06</td><td align="center">3</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">24.32</td><td align="center">24.03</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.71</td><td align="center">19</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">24.4</td><td align="center">23.98</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.73</td><td align="center">23</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">24.25</td><td align="center">23.92</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.82</td><td align="center">24</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">24.26</td><td align="center">23.92</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.8</td><td align="center">21</td></tr></table>');
+		infoWindow.setContent('<h1><b>Hanga Roa,Easter Island <img src="markers/03d.png" alt="overcast clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">23.82</td><td align="center">23.16</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.23</td><td align="center">12</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">24.46</td><td align="center">23.61</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.9</td><td align="center">18</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">24.49</td><td align="center">23.83</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.97</td><td align="center">24</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">24.61</td><td align="center">24.39</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.97</td><td align="center">27</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">24.5</td><td align="center">24.17</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.66</td><td align="center">23</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">24.14</td><td align="center">23.93</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.31</td><td align="center">15</td></tr></table>');
 		infoWindow.setPosition(latlng);
 		infoWindow.open(map, this);
 		this.setAnimation(google.maps.Animation.BOUNCE);
@@ -260,7 +244,23 @@
 
 		marker.addListener('click', function() {
 		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Quito,Ecuador <img src="markers/04d.png" alt="light rain"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">17.21</td><td align="center">11.99</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.79</td><td align="center">4</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">18.16</td><td align="center">12.14</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">10.21</td><td align="center">4</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">17.16</td><td align="center">12.03</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">15.74</td><td align="center">3</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">16.8</td><td align="center">11.53</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">7.49</td><td align="center">3</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">15.05</td><td align="center">10.61</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">6.21</td><td align="center">3</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">16.77</td><td align="center">10.42</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.41</td><td align="center">2</td></tr></table>');
+		infoWindow.setContent('<h1><b>Quito,Ecuador <img src="markers/04d.png" alt="light rain"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">18.01</td><td align="center">12.61</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">11.16</td><td align="center">3</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">17.78</td><td align="center">11.57</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">12.69</td><td align="center">2</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">16.87</td><td align="center">10.82</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">7.06</td><td align="center">2</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">15.66</td><td align="center">8.81</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.54</td><td align="center">2</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">16.49</td><td align="center">10.12</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">5.25</td><td align="center">2</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">16.14</td><td align="center">10.13</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.89</td><td align="center">1</td></tr></table>');
+		infoWindow.setPosition(latlng);
+		infoWindow.open(map, this);
+		this.setAnimation(google.maps.Animation.BOUNCE);
+		});
+
+		var latlng = new google.maps.LatLng(13.692940, -89.218191);
+		var img = new google.maps.MarkerImage('markers/04d.png');
+		var marker = new google.maps.Marker({
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		marker.addListener('click', function() {
+		var infoWindow = new google.maps.InfoWindow({map: map});
+		infoWindow.setContent('<h1><b>San Salvador,El Salvador <img src="markers/04d.png" alt="broken clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">32.91</td><td align="center">16.96</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.61</td><td align="center">2</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">33.03</td><td align="center">17.77</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.38</td><td align="center">5</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">31.02</td><td align="center">18.98</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.1</td><td align="center">1</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">30.66</td><td align="center">20.14</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.62</td><td align="center">1</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">28.54</td><td align="center">21.12</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.58</td><td align="center">5</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">31.44</td><td align="center">19.46</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.43</td><td align="center">5</td></tr></table>');
 		infoWindow.setPosition(latlng);
 		infoWindow.open(map, this);
 		this.setAnimation(google.maps.Animation.BOUNCE);
@@ -276,23 +276,7 @@
 
 		marker.addListener('click', function() {
 		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Malabo,Equatorial Guinea <img src="markers/02d.png" alt="few clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">27.11</td><td align="center">24.34</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">23.92</td><td align="center">10</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">26.89</td><td align="center">23.44</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">9.02</td><td align="center">6</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">29.06</td><td align="center">26.7</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.12</td><td align="center">12</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">27.72</td><td align="center">25.86</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">15.75</td><td align="center">9</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">26.97</td><td align="center">26.05</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">13.1</td><td align="center">9</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">26.92</td><td align="center">25.66</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">21.39</td><td align="center">3</td></tr></table>');
-		infoWindow.setPosition(latlng);
-		infoWindow.open(map, this);
-		this.setAnimation(google.maps.Animation.BOUNCE);
-		});
-
-		var latlng = new google.maps.LatLng(-51.697713, -57.851663);
-		var img = new google.maps.MarkerImage('markers/01d.png');
-		var marker = new google.maps.Marker({
-		icon: img,
-		position: latlng
-		});
-		marker.setMap(map);
-
-		marker.addListener('click', function() {
-		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Stanley,Falkland Islands <img src="markers/01d.png" alt="clear sky"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">9.04</td><td align="center">7.75</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.23</td><td align="center">34</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">8.16</td><td align="center">7.25</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.75</td><td align="center">26</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">8.51</td><td align="center">8.03</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.95</td><td align="center">42</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">6.65</td><td align="center">5.51</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.66</td><td align="center">13</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">6.9</td><td align="center">6.32</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.73</td><td align="center">48</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">6.37</td><td align="center">5.07</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.73</td><td align="center">48</td></tr></table>');
+		infoWindow.setContent('<h1><b>Malabo,Equatorial Guinea <img src="markers/02d.png" alt="few clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">26.83</td><td align="center">24.5</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">8.6</td><td align="center">8</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">26.86</td><td align="center">24.67</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">5.5</td><td align="center">12</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">28.14</td><td align="center">25.73</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">10.59</td><td align="center">8</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">27.34</td><td align="center">25.68</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">21.54</td><td align="center">10</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">26.92</td><td align="center">25.66</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">14.35</td><td align="center">7</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">28.31</td><td align="center">26.17</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.38</td><td align="center">10</td></tr></table>');
 		infoWindow.setPosition(latlng);
 		infoWindow.open(map, this);
 		this.setAnimation(google.maps.Animation.BOUNCE);
@@ -308,14 +292,14 @@
 
 		marker.addListener('click', function() {
 		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Palikir,Federated States of Micronesia <img src="markers/03d.png" alt="overcast clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">27.86</td><td align="center">26.25</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">7.03</td><td align="center">21</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">28.46</td><td align="center">27.05</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.56</td><td align="center">24</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">28.31</td><td align="center">26.88</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">17.45</td><td align="center">16</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">28.56</td><td align="center">27.75</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">14.26</td><td align="center">22</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">28.37</td><td align="center">27.95</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">7.28</td><td align="center">20</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">28.06</td><td align="center">27.57</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">17.48</td><td align="center">18</td></tr></table>');
+		infoWindow.setContent('<h1><b>Palikir,Federated States of Micronesia <img src="markers/03d.png" alt="overcast clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Sat Apr 22</td><td align="center">28.47</td><td align="center">27.26</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">5.66</td><td align="center">25</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">28.76</td><td align="center">26.74</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">12.02</td><td align="center">25</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">28.72</td><td align="center">28.47</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">9.19</td><td align="center">21</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">29.36</td><td align="center">28.61</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.6</td><td align="center">10</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">29.04</td><td align="center">28.66</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">7.24</td><td align="center">21</td></tr><tr><td align="center">Thu Apr 27</td><td align="center">28.83</td><td align="center">28.26</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">6.01</td><td align="center">19</td></tr></table>');
 		infoWindow.setPosition(latlng);
 		infoWindow.open(map, this);
 		this.setAnimation(google.maps.Animation.BOUNCE);
 		});
 
-		var latlng = new google.maps.LatLng(0.416198, 9.467268);
-		var img = new google.maps.MarkerImage('markers/03d.png');
+		var latlng = new google.maps.LatLng(52.520007, 13.404954);
+		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
 		icon: img,
 		position: latlng
@@ -324,46 +308,14 @@
 
 		marker.addListener('click', function() {
 		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Libreville,Gabon <img src="markers/03d.png" alt="scattered clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">25.8</td><td align="center">22.35</td><td align="center"><img src="markers/very heavy rain.png" alt="very heavy rain"></td><td align="center">61.96</td><td align="center">3</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">29.04</td><td align="center">22.79</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.37</td><td align="center">7</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">28.47</td><td align="center">24.2</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">7.7</td><td align="center">14</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">27.97</td><td align="center">27.16</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">9.99</td><td align="center">12</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">28.42</td><td align="center">27.18</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.96</td><td align="center">7</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">28.52</td><td align="center">27.21</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">5.42</td><td align="center">9</td></tr></table>');
-		infoWindow.setPosition(latlng);
-		infoWindow.open(map, this);
-		this.setAnimation(google.maps.Animation.BOUNCE);
-		});
-
-		var latlng = new google.maps.LatLng(13.476282, 144.750223);
-		var img = new google.maps.MarkerImage('markers/03d.png');
-		var marker = new google.maps.Marker({
-		icon: img,
-		position: latlng
-		});
-		marker.setMap(map);
-
-		marker.addListener('click', function() {
-		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Hag&#229;t&#241;a,Guam <img src="markers/03d.png" alt="scattered clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">29.0</td><td align="center">26.96</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.37</td><td align="center">20</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">28.76</td><td align="center">27.17</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.75</td><td align="center">21</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">28.9</td><td align="center">26.96</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.71</td><td align="center">24</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">28.68</td><td align="center">28.27</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.33</td><td align="center">18</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">28.93</td><td align="center">28.35</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.66</td><td align="center">19</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">28.76</td><td align="center">27.57</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">5</td><td align="center">22</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">28.37</td><td align="center">26.97</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">22.15</td><td align="center">24</td></tr></table>');
-		infoWindow.setPosition(latlng);
-		infoWindow.open(map, this);
-		this.setAnimation(google.maps.Animation.BOUNCE);
-		});
-
-		var latlng = new google.maps.LatLng(14.634915, -90.506882);
-		var img = new google.maps.MarkerImage('markers/11d.png');
-		var marker = new google.maps.Marker({
-		icon: img,
-		position: latlng
-		});
-		marker.setMap(map);
-
-		marker.addListener('click', function() {
-		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Guatemala City,Guatemala <img src="markers/11d.png" alt="thunderstorm"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">26.05</td><td align="center">14.45</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.9</td><td align="center">4</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">28.4</td><td align="center">14.79</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.38</td><td align="center">3</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">25.61</td><td align="center">12.61</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">7.33</td><td align="center">3</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">22.9</td><td align="center">15.17</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">5.79</td><td align="center">2</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">21.75</td><td align="center">14.72</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">8.24</td><td align="center">3</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">21.02</td><td align="center">14.02</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">8.02</td><td align="center">2</td></tr></table>');
+		infoWindow.setContent('<h1><b>Berlin,Germany <img src="markers/01d.png" alt="clear sky"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">12.16</td><td align="center">5.73</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.92</td><td align="center">29</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">8.73</td><td align="center">4.16</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.65</td><td align="center">37</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">7.76</td><td align="center">4.41</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.66</td><td align="center">29</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">11.24</td><td align="center">5.47</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.35</td><td align="center">28</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">9.37</td><td align="center">3.4</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.77</td><td align="center">27</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">7.56</td><td align="center">4.94</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">5.61</td><td align="center">22</td></tr></table>');
 		infoWindow.setPosition(latlng);
 		infoWindow.open(map, this);
 		this.setAnimation(google.maps.Animation.BOUNCE);
 		});
 
 		var latlng = new google.maps.LatLng(18.594395, -72.307433);
-		var img = new google.maps.MarkerImage('markers/04d.png');
+		var img = new google.maps.MarkerImage('markers/09d.png');
 		var marker = new google.maps.Marker({
 		icon: img,
 		position: latlng
@@ -372,7 +324,7 @@
 
 		marker.addListener('click', function() {
 		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Port-au-Prince,Haiti <img src="markers/04d.png" alt="light rain"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">25.45</td><td align="center">22.04</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.68</td><td align="center">4</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">24.85</td><td align="center">21.16</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">18.42</td><td align="center">4</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">26.11</td><td align="center">18.58</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">6.83</td><td align="center">1</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">28.45</td><td align="center">20.38</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.1</td><td align="center">4</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">28.5</td><td align="center">20.56</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.71</td><td align="center">4</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">28.87</td><td align="center">20.77</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">5.68</td><td align="center">3</td></tr></table>');
+		infoWindow.setContent('<h1><b>Port-au-Prince,Haiti <img src="markers/09d.png" alt="moderate rain"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">25.15</td><td align="center">22.14</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.03</td><td align="center">5</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">26.43</td><td align="center">22.45</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.75</td><td align="center">8</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">29.52</td><td align="center">19.17</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.6</td><td align="center">4</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">30.86</td><td align="center">21.51</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.83</td><td align="center">3</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">30.39</td><td align="center">21.92</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.31</td><td align="center">3</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">31.19</td><td align="center">22.08</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.78</td><td align="center">2</td></tr></table>');
 		infoWindow.setPosition(latlng);
 		infoWindow.open(map, this);
 		this.setAnimation(google.maps.Animation.BOUNCE);
@@ -388,29 +340,13 @@
 
 		marker.addListener('click', function() {
 		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Tegucigalpa,Honduras <img src="markers/thunderstorm with light rain.png" alt="thunderstorm with light rain"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">25.42</td><td align="center">17.85</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">11.59</td><td align="center">1</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">25.1</td><td align="center">18.54</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">8.5</td><td align="center">1</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">28.06</td><td align="center">17.51</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.11</td><td align="center">5</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">29.05</td><td align="center">18.32</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.68</td><td align="center">3</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">27.9</td><td align="center">17.97</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">5.33</td><td align="center">4</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">27.67</td><td align="center">17.52</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.86</td><td align="center">4</td></tr></table>');
+		infoWindow.setContent('<h1><b>Tegucigalpa,Honduras <img src="markers/thunderstorm with light rain.png" alt="thunderstorm with light rain"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">24.86</td><td align="center">16.86</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.61</td><td align="center">3</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">26.64</td><td align="center">16.16</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.05</td><td align="center">1</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">29.87</td><td align="center">17.88</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.83</td><td align="center">3</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">29.71</td><td align="center">18.64</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">5.48</td><td align="center">3</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">28.79</td><td align="center">18.47</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.16</td><td align="center">4</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">30.14</td><td align="center">18.41</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.64</td><td align="center">5</td></tr></table>');
 		infoWindow.setPosition(latlng);
 		infoWindow.open(map, this);
 		this.setAnimation(google.maps.Animation.BOUNCE);
 		});
 
 		var latlng = new google.maps.LatLng(18.017874, -76.809904);
-		var img = new google.maps.MarkerImage('markers/02d.png');
-		var marker = new google.maps.Marker({
-		icon: img,
-		position: latlng
-		});
-		marker.setMap(map);
-
-		marker.addListener('click', function() {
-		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Kingston,Jamaica <img src="markers/02d.png" alt="few clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">24.91</td><td align="center">21.54</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">34.83</td><td align="center">6</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">21.99</td><td align="center">20.24</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">41.18</td><td align="center">7</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">28.51</td><td align="center">24.88</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.86</td><td align="center">10</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">27.65</td><td align="center">24.88</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">5.33</td><td align="center">11</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">28.1</td><td align="center">24.81</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.51</td><td align="center">6</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">28.37</td><td align="center">24.92</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.47</td><td align="center">7</td></tr></table>');
-		infoWindow.setPosition(latlng);
-		infoWindow.open(map, this);
-		this.setAnimation(google.maps.Animation.BOUNCE);
-		});
-
-		var latlng = new google.maps.LatLng(3.139003, 101.686855);
 		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
 		icon: img,
@@ -420,77 +356,13 @@
 
 		marker.addListener('click', function() {
 		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Kuala Lumpur,Malaysia <img src="markers/04d.png" alt="broken clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">30.85</td><td align="center">26.47</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.37</td><td align="center">9</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">28.26</td><td align="center">24.99</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">14.66</td><td align="center">5</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">28.41</td><td align="center">24.55</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">8.18</td><td align="center">7</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">27.28</td><td align="center">23.5</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">11.26</td><td align="center">5</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">26.73</td><td align="center">23.7</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">10.85</td><td align="center">3</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">27.71</td><td align="center">23.32</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">11.63</td><td align="center">5</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">27.92</td><td align="center">22.89</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">7.99</td><td align="center">5</td></tr></table>');
+		infoWindow.setContent('<h1><b>Kingston,Jamaica <img src="markers/04d.png" alt="broken clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">22.05</td><td align="center">20.97</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">40.82</td><td align="center">6</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">22.78</td><td align="center">21.07</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">6.53</td><td align="center">7</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">27.17</td><td align="center">23.72</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">6.14</td><td align="center">12</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">26.91</td><td align="center">23.66</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.73</td><td align="center">7</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">28.24</td><td align="center">24.57</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.51</td><td align="center">7</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">29.29</td><td align="center">23.73</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.2</td><td align="center">6</td></tr></table>');
 		infoWindow.setPosition(latlng);
 		infoWindow.open(map, this);
 		this.setAnimation(google.maps.Animation.BOUNCE);
 		});
 
-		var latlng = new google.maps.LatLng(-22.255823, 166.450524);
-		var img = new google.maps.MarkerImage('markers/03d.png');
-		var marker = new google.maps.Marker({
-		icon: img,
-		position: latlng
-		});
-		marker.setMap(map);
-
-		marker.addListener('click', function() {
-		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Noum&#233;a,New Caledonia <img src="markers/03d.png" alt="overcast clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">23.59</td><td align="center">19.46</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.06</td><td align="center">7</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">23.3</td><td align="center">20.66</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.53</td><td align="center">18</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">23.3</td><td align="center">22.46</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.55</td><td align="center">17</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">25.03</td><td align="center">22.8</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.64</td><td align="center">12</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">24.7</td><td align="center">22.45</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.97</td><td align="center">12</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">24.71</td><td align="center">21.32</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.68</td><td align="center">9</td></tr></table>');
-		infoWindow.setPosition(latlng);
-		infoWindow.open(map, this);
-		this.setAnimation(google.maps.Animation.BOUNCE);
-		});
-
-		var latlng = new google.maps.LatLng(12.114993, -86.236174);
-		var img = new google.maps.MarkerImage('markers/03d.png');
-		var marker = new google.maps.Marker({
-		icon: img,
-		position: latlng
-		});
-		marker.setMap(map);
-
-		marker.addListener('click', function() {
-		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Managua,Nicaragua <img src="markers/03d.png" alt="overcast clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">30.65</td><td align="center">22.89</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">3</td><td align="center">3</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">30.6</td><td align="center">23.2</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.99</td><td align="center">2</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">29.56</td><td align="center">24.26</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.32</td><td align="center">3</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">30.65</td><td align="center">24.47</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.47</td><td align="center">5</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">30.35</td><td align="center">24.87</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.13</td><td align="center">16</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">31.22</td><td align="center">24.57</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.63</td><td align="center">22</td></tr></table>');
-		infoWindow.setPosition(latlng);
-		infoWindow.open(map, this);
-		this.setAnimation(google.maps.Animation.BOUNCE);
-		});
-
-		var latlng = new google.maps.LatLng(-9.443800, 147.180267);
-		var img = new google.maps.MarkerImage('markers/03d.png');
-		var marker = new google.maps.Marker({
-		icon: img,
-		position: latlng
-		});
-		marker.setMap(map);
-
-		marker.addListener('click', function() {
-		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Port Moresby,Papua New Guinea <img src="markers/03d.png" alt="scattered clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">27.08</td><td align="center">25.71</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">12.31</td><td align="center">7</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">27.09</td><td align="center">25.87</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">3</td><td align="center">5</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">27.26</td><td align="center">25.44</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">11.93</td><td align="center">14</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">25.38</td><td align="center">21.61</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">6.75</td><td align="center">4</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">25.36</td><td align="center">21.9</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">5.79</td><td align="center">3</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">24.85</td><td align="center">21.7</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">6.2</td><td align="center">3</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">24.61</td><td align="center">21.72</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">6.6</td><td align="center">3</td></tr></table>');
-		infoWindow.setPosition(latlng);
-		infoWindow.open(map, this);
-		this.setAnimation(google.maps.Animation.BOUNCE);
-		});
-
-		var latlng = new google.maps.LatLng(14.599512, 120.984220);
-		var img = new google.maps.MarkerImage('markers/02d.png');
-		var marker = new google.maps.Marker({
-		icon: img,
-		position: latlng
-		});
-		marker.setMap(map);
-
-		marker.addListener('click', function() {
-		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Manila,Philippines <img src="markers/02d.png" alt="few clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">33.44</td><td align="center">24.91</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">7.69</td><td align="center">7</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">29.34</td><td align="center">24.07</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">6.88</td><td align="center">1</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">27.45</td><td align="center">24.79</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.35</td><td align="center">3</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">31.88</td><td align="center">25.05</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.89</td><td align="center">7</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">30.18</td><td align="center">24.85</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.09</td><td align="center">9</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">31.61</td><td align="center">23.32</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.72</td><td align="center">10</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">30.82</td><td align="center">23.84</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.36</td><td align="center">13</td></tr></table>');
-		infoWindow.setPosition(latlng);
-		infoWindow.open(map, this);
-		this.setAnimation(google.maps.Animation.BOUNCE);
-		});
-
-		var latlng = new google.maps.LatLng(25.032969, 121.565418);
+		var latlng = new google.maps.LatLng(-1.292066, 36.821946);
 		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
 		icon: img,
@@ -500,29 +372,13 @@
 
 		marker.addListener('click', function() {
 		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Taipei,Republic of China (Taiwan) <img src="markers/04d.png" alt="broken clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">23.02</td><td align="center">21.33</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.47</td><td align="center">1</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">22.99</td><td align="center">19.26</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">5.3</td><td align="center">19</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">18.31</td><td align="center">17.1</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.82</td><td align="center">19</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">20.93</td><td align="center">19.8</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.26</td><td align="center">15</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">22.43</td><td align="center">21.4</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.64</td><td align="center">19</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">23.46</td><td align="center">22.55</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">9.54</td><td align="center">24</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">25.02</td><td align="center">22.29</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">9.95</td><td align="center">2</td></tr></table>');
+		infoWindow.setContent('<h1><b>Nairobi,Kenya <img src="markers/04d.png" alt="broken clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">25.16</td><td align="center">16.26</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.59</td><td align="center">9</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">25.72</td><td align="center">14.94</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.89</td><td align="center">7</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">25.09</td><td align="center">14.43</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.44</td><td align="center">5</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">25.84</td><td align="center">15.08</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.47</td><td align="center">9</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">24.57</td><td align="center">14.55</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.33</td><td align="center">11</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">23.41</td><td align="center">14.44</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">6.05</td><td align="center">8</td></tr></table>');
 		infoWindow.setPosition(latlng);
 		infoWindow.open(map, this);
 		this.setAnimation(google.maps.Animation.BOUNCE);
 		});
 
-		var latlng = new google.maps.LatLng(-4.263360, 15.242885);
-		var img = new google.maps.MarkerImage('markers/09d.png');
-		var marker = new google.maps.Marker({
-		icon: img,
-		position: latlng
-		});
-		marker.setMap(map);
-
-		marker.addListener('click', function() {
-		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Brazzaville,Republic of the Congo <img src="markers/09d.png" alt="moderate rain"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">28.31</td><td align="center">21.95</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">6.13</td><td align="center">5</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">28.61</td><td align="center">23.09</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">7.08</td><td align="center">5</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">28.32</td><td align="center">21.91</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">9.18</td><td align="center">6</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">26.42</td><td align="center">22.26</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.42</td><td align="center">7</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">28.02</td><td align="center">22.13</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">17.16</td><td align="center">7</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">26.87</td><td align="center">22.21</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">29.68</td><td align="center">6</td></tr></table>');
-		infoWindow.setPosition(latlng);
-		infoWindow.open(map, this);
-		this.setAnimation(google.maps.Animation.BOUNCE);
-		});
-
-		var latlng = new google.maps.LatLng(-1.970579, 30.104429);
+		var latlng = new google.maps.LatLng(56.949649, 24.105186);
 		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
 		icon: img,
@@ -532,29 +388,13 @@
 
 		marker.addListener('click', function() {
 		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Kigali,Rwanda <img src="markers/03d.png" alt="scattered clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">21.27</td><td align="center">14.82</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.65</td><td align="center">5</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">19.46</td><td align="center">12.23</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">8</td><td align="center">5</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">20.16</td><td align="center">12.26</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.96</td><td align="center">5</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">23.77</td><td align="center">15.51</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.51</td><td align="center">5</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">21.22</td><td align="center">13.65</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">14.11</td><td align="center">3</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">21.27</td><td align="center">12.06</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">8.2</td><td align="center">2</td></tr></table>');
+		infoWindow.setContent('<h1><b>Riga,Latvia <img src="markers/03d.png" alt="overcast clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">7.85</td><td align="center">2.91</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.59</td><td align="center">26</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">4.42</td><td align="center">2.85</td><td align="center"><img src="markers/sky is clear.png" alt="sky is clear"></td><td align="center">0.61</td><td align="center">43</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">7.04</td><td align="center">2.14</td><td align="center"><img src="markers/sky is clear.png" alt="sky is clear"></td><td align="center">0.83</td><td align="center">20</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">5.84</td><td align="center">3.37</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.5</td><td align="center">20</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">8.82</td><td align="center">5.05</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.83</td><td align="center">25</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">9.16</td><td align="center">6.02</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.83</td><td align="center">7</td></tr></table>');
 		infoWindow.setPosition(latlng);
 		infoWindow.open(map, this);
 		this.setAnimation(google.maps.Animation.BOUNCE);
 		});
 
-		var latlng = new google.maps.LatLng(1.355379, 103.867744);
-		var img = new google.maps.MarkerImage('markers/04d.png');
-		var marker = new google.maps.Marker({
-		icon: img,
-		position: latlng
-		});
-		marker.setMap(map);
-
-		marker.addListener('click', function() {
-		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Singapore,Singapore <img src="markers/04d.png" alt="broken clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">28.8</td><td align="center">26.47</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.77</td><td align="center">9</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">29.41</td><td align="center">28.14</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.49</td><td align="center">8</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">29.21</td><td align="center">28.25</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.82</td><td align="center">5</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">28.43</td><td align="center">27.35</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.14</td><td align="center">6</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">29.03</td><td align="center">27.1</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">6.72</td><td align="center">11</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">28.76</td><td align="center">27.12</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">5.6</td><td align="center">9</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">28.67</td><td align="center">27.34</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.33</td><td align="center">4</td></tr></table>');
-		infoWindow.setPosition(latlng);
-		infoWindow.open(map, this);
-		this.setAnimation(google.maps.Animation.BOUNCE);
-		});
-
-		var latlng = new google.maps.LatLng(-9.445638, 159.972900);
+		var latlng = new google.maps.LatLng(6.290743, -10.760524);
 		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
 		icon: img,
@@ -564,13 +404,13 @@
 
 		marker.addListener('click', function() {
 		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Honiara,Solomon Islands <img src="markers/03d.png" alt="scattered clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">27.79</td><td align="center">21.3</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">7.71</td><td align="center">1</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">27.01</td><td align="center">22.35</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.8</td><td align="center">4</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">28.83</td><td align="center">27.36</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.07</td><td align="center">7</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">28.43</td><td align="center">27.3</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.91</td><td align="center">6</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">28.51</td><td align="center">27.3</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.06</td><td align="center">2</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">28.72</td><td align="center">27.12</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.22</td><td align="center">5</td></tr></table>');
+		infoWindow.setContent('<h1><b>Monrovia,Liberia <img src="markers/03d.png" alt="scattered clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">28.75</td><td align="center">26.71</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">9.65</td><td align="center">12</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">28.18</td><td align="center">26.72</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">8.32</td><td align="center">10</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">28.61</td><td align="center">27.83</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.16</td><td align="center">12</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">28.94</td><td align="center">28.07</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.78</td><td align="center">19</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">29.27</td><td align="center">28.11</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.08</td><td align="center">23</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">29.34</td><td align="center">28.17</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.3</td><td align="center">19</td></tr></table>');
 		infoWindow.setPosition(latlng);
 		infoWindow.open(map, this);
 		this.setAnimation(google.maps.Animation.BOUNCE);
 		});
 
-		var latlng = new google.maps.LatLng(0.330192, 6.733343);
+		var latlng = new google.maps.LatLng(54.687156, 25.279651);
 		var img = new google.maps.MarkerImage('markers/01d.png');
 		var marker = new google.maps.Marker({
 		icon: img,
@@ -580,14 +420,14 @@
 
 		marker.addListener('click', function() {
 		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>S&#227;o Tom&#233;,S&#227;o Tom&#233; and Pr&#237;ncipe <img src="markers/01d.png" alt="clear sky"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">28.28</td><td align="center">24.8</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">20.32</td><td align="center">10</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">27.8</td><td align="center">26.81</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.39</td><td align="center">6</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">27.89</td><td align="center">25.71</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">8.93</td><td align="center">13</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">27.72</td><td align="center">27.48</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">13.33</td><td align="center">14</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">28.22</td><td align="center">27.5</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.93</td><td align="center">8</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">27.82</td><td align="center">27.01</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">6.7</td><td align="center">3</td></tr></table>');
+		infoWindow.setContent('<h1><b>Vilnius,Lithuania <img src="markers/01d.png" alt="clear sky"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">6.25</td><td align="center">-3.22</td><td align="center"><img src="markers/light snow.png" alt="light snow"></td><td align="center">2.2</td><td align="center">32</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">6.1</td><td align="center">1.54</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.79</td><td align="center">40</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">7.99</td><td align="center">-1.07</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.21</td><td align="center">30</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">6.84</td><td align="center">2.87</td><td align="center"><img src="markers/sky is clear.png" alt="sky is clear"></td><td align="center">3.12</td><td align="center">20</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">13.62</td><td align="center">5.85</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">5.33</td><td align="center">34</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">13.14</td><td align="center">7.62</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.75</td><td align="center">10</td></tr></table>');
 		infoWindow.setPosition(latlng);
 		infoWindow.open(map, this);
 		this.setAnimation(google.maps.Animation.BOUNCE);
 		});
 
-		var latlng = new google.maps.LatLng(-21.139342, -175.204947);
-		var img = new google.maps.MarkerImage('markers/04d.png');
+		var latlng = new google.maps.LatLng(-20.160891, 57.501222);
+		var img = new google.maps.MarkerImage('markers/03d.png');
 		var marker = new google.maps.Marker({
 		icon: img,
 		position: latlng
@@ -596,13 +436,29 @@
 
 		marker.addListener('click', function() {
 		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Nuku&#699;alofa,Tonga <img src="markers/04d.png" alt="light rain"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">27.73</td><td align="center">25.56</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.68</td><td align="center">26</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">27.44</td><td align="center">27.0</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.42</td><td align="center">27</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">27.16</td><td align="center">26.77</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">7.36</td><td align="center">21</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">27.67</td><td align="center">26.9</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.46</td><td align="center">17</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">28.0</td><td align="center">27.52</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.28</td><td align="center">14</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">27.56</td><td align="center">27.22</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.29</td><td align="center">12</td></tr></table>');
+		infoWindow.setContent('<h1><b>Port Louis,Mauritius <img src="markers/03d.png" alt="scattered clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">25.86</td><td align="center">23.65</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.42</td><td align="center">12</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">28.07</td><td align="center">24.9</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.43</td><td align="center">15</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">24.93</td><td align="center">23.54</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">12.65</td><td align="center">1</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">26.99</td><td align="center">25.84</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.45</td><td align="center">3</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">26.42</td><td align="center">25.33</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">6.4</td><td align="center">11</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">26.91</td><td align="center">25.8</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.17</td><td align="center">23</td></tr></table>');
 		infoWindow.setPosition(latlng);
 		infoWindow.open(map, this);
 		this.setAnimation(google.maps.Animation.BOUNCE);
 		});
 
-		var latlng = new google.maps.LatLng(0.347596, 32.582520);
+		var latlng = new google.maps.LatLng(27.717245, 85.323960);
+		var img = new google.maps.MarkerImage('markers/50d.png');
+		var marker = new google.maps.Marker({
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		marker.addListener('click', function() {
+		var infoWindow = new google.maps.InfoWindow({map: map});
+		infoWindow.setContent('<h1><b>Kathmandu,Nepal <img src="markers/50d.png" alt="mist"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">25.08</td><td align="center">17.0</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.5</td><td align="center">2</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">22.6</td><td align="center">16.73</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.91</td><td align="center">2</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">19.29</td><td align="center">16.08</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">15.29</td><td align="center">4</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">18.07</td><td align="center">9.19</td><td align="center"><img src="markers/light snow.png" alt="light snow"></td><td align="center">1.12</td><td align="center">2</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">19.91</td><td align="center">10.38</td><td align="center"><img src="markers/light snow.png" alt="light snow"></td><td align="center">0.67</td><td align="center">2</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">19.37</td><td align="center">9.04</td><td align="center"><img src="markers/light snow.png" alt="light snow"></td><td align="center">0.39</td><td align="center">2</td></tr><tr><td align="center">Thu Apr 27</td><td align="center">19.08</td><td align="center">7.69</td><td align="center"><img src="markers/light snow.png" alt="light snow"></td><td align="center">2.85</td><td align="center">2</td></tr></table>');
+		infoWindow.setPosition(latlng);
+		infoWindow.open(map, this);
+		this.setAnimation(google.maps.Animation.BOUNCE);
+		});
+
+		var latlng = new google.maps.LatLng(12.114993, -86.236174);
 		var img = new google.maps.MarkerImage('markers/thunderstorm with light rain.png');
 		var marker = new google.maps.Marker({
 		icon: img,
@@ -612,13 +468,13 @@
 
 		marker.addListener('click', function() {
 		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Kampala,Uganda <img src="markers/thunderstorm with light rain.png" alt="thunderstorm with light rain"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">25.2</td><td align="center">17.2</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">7.69</td><td align="center">7</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">24.31</td><td align="center">16.43</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.02</td><td align="center">6</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">26.06</td><td align="center">16.06</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">7.86</td><td align="center">8</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">26.82</td><td align="center">23.78</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">7.95</td><td align="center">14</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">26.72</td><td align="center">22.6</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">5.84</td><td align="center">10</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">26.42</td><td align="center">23.41</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.54</td><td align="center">9</td></tr></table>');
+		infoWindow.setContent('<h1><b>Managua,Nicaragua <img src="markers/thunderstorm with light rain.png" alt="thunderstorm with light rain"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">30.86</td><td align="center">21.98</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.14</td><td align="center">1</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">31.79</td><td align="center">23.07</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.83</td><td align="center">3</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">30.57</td><td align="center">24.88</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.24</td><td align="center">3</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">31.01</td><td align="center">24.69</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.27</td><td align="center">5</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">31.54</td><td align="center">25.07</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.62</td><td align="center">12</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">31.94</td><td align="center">24.96</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.03</td><td align="center">11</td></tr></table>');
 		infoWindow.setPosition(latlng);
 		infoWindow.open(map, this);
 		this.setAnimation(google.maps.Animation.BOUNCE);
 		});
 
-		var latlng = new google.maps.LatLng(10.480594, -66.903606);
+		var latlng = new google.maps.LatLng(54.597285, -5.930120);
 		var img = new google.maps.MarkerImage('markers/04d.png');
 		var marker = new google.maps.Marker({
 		icon: img,
@@ -628,7 +484,247 @@
 
 		marker.addListener('click', function() {
 		var infoWindow = new google.maps.InfoWindow({map: map});
-		infoWindow.setContent('<h1><b>Caracas,Venezuela <img src="markers/04d.png" alt="light rain"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Thu Apr 20</td><td align="center">27.56</td><td align="center">16.39</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">16.92</td><td align="center">3</td></tr><tr><td align="center">Fri Apr 21</td><td align="center">27.95</td><td align="center">16.46</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">6.94</td><td align="center">4</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">31.06</td><td align="center">24.08</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.88</td><td align="center">6</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">32.15</td><td align="center">24.18</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.58</td><td align="center">6</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">30.75</td><td align="center">24.11</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.12</td><td align="center">5</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">32.47</td><td align="center">22.92</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.6</td><td align="center">5</td></tr></table>');
+		infoWindow.setContent('<h1><b>Belfast,United Kingdom Northern Ireland <img src="markers/04d.png" alt="broken clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">12.94</td><td align="center">5.43</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.35</td><td align="center">23</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">10.68</td><td align="center">5.47</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.23</td><td align="center">7</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">12.41</td><td align="center">5.91</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.77</td><td align="center">26</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">7.14</td><td align="center">5.82</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">7.57</td><td align="center">45</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">7.12</td><td align="center">5.05</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">6.13</td><td align="center">42</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">7.86</td><td align="center">5.34</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.8</td><td align="center">31</td></tr></table>');
+		infoWindow.setPosition(latlng);
+		infoWindow.open(map, this);
+		this.setAnimation(google.maps.Animation.BOUNCE);
+		});
+
+		var latlng = new google.maps.LatLng(33.729388, 73.093146);
+		var img = new google.maps.MarkerImage('markers/03d.png');
+		var marker = new google.maps.Marker({
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		marker.addListener('click', function() {
+		var infoWindow = new google.maps.InfoWindow({map: map});
+		infoWindow.setContent('<h1><b>Islamabad,Pakistan <img src="markers/03d.png" alt="scattered clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">31.31</td><td align="center">19.59</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.48</td><td align="center">7</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">31.5</td><td align="center">16.18</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.38</td><td align="center">4</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">28.14</td><td align="center">15.78</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.47</td><td align="center">5</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">25.14</td><td align="center">12.29</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.5</td><td align="center">5</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">26.22</td><td align="center">11.93</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.68</td><td align="center">5</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">23.96</td><td align="center">13.0</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">9.75</td><td align="center">4</td></tr><tr><td align="center">Thu Apr 27</td><td align="center">25.76</td><td align="center">12.69</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.32</td><td align="center">3</td></tr></table>');
+		infoWindow.setPosition(latlng);
+		infoWindow.open(map, this);
+		this.setAnimation(google.maps.Animation.BOUNCE);
+		});
+
+		var latlng = new google.maps.LatLng(9.101178, -79.402864);
+		var img = new google.maps.MarkerImage('markers/03d.png');
+		var marker = new google.maps.Marker({
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		marker.addListener('click', function() {
+		var infoWindow = new google.maps.InfoWindow({map: map});
+		infoWindow.setContent('<h1><b>Panama City,Panama <img src="markers/03d.png" alt="scattered clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">28.11</td><td align="center">24.57</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.17</td><td align="center">10</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">28.23</td><td align="center">24.56</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.79</td><td align="center">8</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">30.12</td><td align="center">25.02</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.26</td><td align="center">2</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">28.26</td><td align="center">24.71</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">5.01</td><td align="center">0</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">27.64</td><td align="center">24.87</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">5.53</td><td align="center">5</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">28.84</td><td align="center">24.48</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.04</td><td align="center">4</td></tr></table>');
+		infoWindow.setPosition(latlng);
+		infoWindow.open(map, this);
+		this.setAnimation(google.maps.Animation.BOUNCE);
+		});
+
+		var latlng = new google.maps.LatLng(-9.443800, 147.180267);
+		var img = new google.maps.MarkerImage('markers/04d.png');
+		var marker = new google.maps.Marker({
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		marker.addListener('click', function() {
+		var infoWindow = new google.maps.InfoWindow({map: map});
+		infoWindow.setContent('<h1><b>Port Moresby,Papua New Guinea <img src="markers/04d.png" alt="light rain"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">27.0</td><td align="center">25.26</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">11.78</td><td align="center">4</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">26.68</td><td align="center">25.78</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">6.13</td><td align="center">13</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">27.04</td><td align="center">25.29</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">9.42</td><td align="center">11</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">25.29</td><td align="center">21.37</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">7.32</td><td align="center">4</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">25.16</td><td align="center">22.21</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.94</td><td align="center">2</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">25.72</td><td align="center">22.39</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.61</td><td align="center">2</td></tr><tr><td align="center">Thu Apr 27</td><td align="center">24.89</td><td align="center">21.54</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.46</td><td align="center">3</td></tr></table>');
+		infoWindow.setPosition(latlng);
+		infoWindow.open(map, this);
+		this.setAnimation(google.maps.Animation.BOUNCE);
+		});
+
+		var latlng = new google.maps.LatLng(52.229676, 21.012229);
+		var img = new google.maps.MarkerImage('markers/01d.png');
+		var marker = new google.maps.Marker({
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		marker.addListener('click', function() {
+		var infoWindow = new google.maps.InfoWindow({map: map});
+		infoWindow.setContent('<h1><b>Warsaw,Poland <img src="markers/01d.png" alt="clear sky"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">8.4</td><td align="center">-2.27</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.13</td><td align="center">27</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">5.98</td><td align="center">4.12</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.24</td><td align="center">34</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">6.99</td><td align="center">3.13</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.92</td><td align="center">21</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">9.29</td><td align="center">4.02</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.45</td><td align="center">20</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">15.37</td><td align="center">7.8</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">7.27</td><td align="center">19</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">16.91</td><td align="center">9.62</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.24</td><td align="center">27</td></tr></table>');
+		infoWindow.setPosition(latlng);
+		infoWindow.open(map, this);
+		this.setAnimation(google.maps.Animation.BOUNCE);
+		});
+
+		var latlng = new google.maps.LatLng(-4.263360, 15.242885);
+		var img = new google.maps.MarkerImage('markers/04d.png');
+		var marker = new google.maps.Marker({
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		marker.addListener('click', function() {
+		var infoWindow = new google.maps.InfoWindow({map: map});
+		infoWindow.setContent('<h1><b>Brazzaville,Republic of the Congo <img src="markers/04d.png" alt="light rain"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">27.0</td><td align="center">20.32</td><td align="center"><img src="markers/very heavy rain.png" alt="very heavy rain"></td><td align="center">56.48</td><td align="center">5</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">27.93</td><td align="center">22.6</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.8</td><td align="center">6</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">27.84</td><td align="center">23.13</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.4</td><td align="center">7</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">27.34</td><td align="center">21.97</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.74</td><td align="center">6</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">27.77</td><td align="center">22.2</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">18.76</td><td align="center">1</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">27.11</td><td align="center">22.24</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">15.9</td><td align="center">6</td></tr></table>');
+		infoWindow.setPosition(latlng);
+		infoWindow.open(map, this);
+		this.setAnimation(google.maps.Animation.BOUNCE);
+		});
+
+		var latlng = new google.maps.LatLng(55.755826, 37.617300);
+		var img = new google.maps.MarkerImage('markers/01d.png');
+		var marker = new google.maps.Marker({
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		marker.addListener('click', function() {
+		var infoWindow = new google.maps.InfoWindow({map: map});
+		infoWindow.setContent('<h1><b>Moscow,Russia <img src="markers/01d.png" alt="clear sky"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">5.34</td><td align="center">-2.39</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.28</td><td align="center">19</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">5.42</td><td align="center">1.24</td><td align="center"><img src="markers/light snow.png" alt="light snow"></td><td align="center">8.86</td><td align="center">20</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">6.84</td><td align="center">0.13</td><td align="center"><img src="markers/13d.png" alt="snow"></td><td align="center">0.44</td><td align="center">19</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">8.84</td><td align="center">1.38</td><td align="center"><img src="markers/sky is clear.png" alt="sky is clear"></td><td align="center">2.33</td><td align="center">16</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">10.42</td><td align="center">6.06</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.3</td><td align="center">26</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">15.86</td><td align="center">10.14</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.38</td><td align="center">39</td></tr></table>');
+		infoWindow.setPosition(latlng);
+		infoWindow.open(map, this);
+		this.setAnimation(google.maps.Animation.BOUNCE);
+		});
+
+		var latlng = new google.maps.LatLng(-13.850696, -171.751355);
+		var img = new google.maps.MarkerImage('markers/04d.png');
+		var marker = new google.maps.Marker({
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		marker.addListener('click', function() {
+		var infoWindow = new google.maps.InfoWindow({map: map});
+		infoWindow.setContent('<h1><b>Apia,Samoa <img src="markers/04d.png" alt="broken clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Sat Apr 22</td><td align="center">29.62</td><td align="center">28.26</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.73</td><td align="center">25</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">29.43</td><td align="center">28.29</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">9.85</td><td align="center">16</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">28.14</td><td align="center">27.32</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">23.04</td><td align="center">14</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">28.16</td><td align="center">27.61</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">6.84</td><td align="center">8</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">28.87</td><td align="center">27.94</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">6.27</td><td align="center">14</td></tr><tr><td align="center">Thu Apr 27</td><td align="center">29.04</td><td align="center">28.61</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">9.63</td><td align="center">22</td></tr></table>');
+		infoWindow.setPosition(latlng);
+		infoWindow.open(map, this);
+		this.setAnimation(google.maps.Animation.BOUNCE);
+		});
+
+		var latlng = new google.maps.LatLng(1.355379, 103.867744);
+		var img = new google.maps.MarkerImage('markers/thunderstorm with heavy rain.png');
+		var marker = new google.maps.Marker({
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		marker.addListener('click', function() {
+		var infoWindow = new google.maps.InfoWindow({map: map});
+		infoWindow.setContent('<h1><b>Singapore,Singapore <img src="markers/thunderstorm with heavy rain.png" alt="thunderstorm with heavy rain"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">28.55</td><td align="center">25.03</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">5.56</td><td align="center">8</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">29.1</td><td align="center">25.83</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">5.87</td><td align="center">9</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">29.84</td><td align="center">27.41</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.19</td><td align="center">8</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">29.07</td><td align="center">27.26</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">6.69</td><td align="center">6</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">28.71</td><td align="center">27.14</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.97</td><td align="center">3</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">28.87</td><td align="center">26.95</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">9.45</td><td align="center">6</td></tr><tr><td align="center">Thu Apr 27</td><td align="center">28.93</td><td align="center">27.49</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.83</td><td align="center">7</td></tr></table>');
+		infoWindow.setPosition(latlng);
+		infoWindow.open(map, this);
+		this.setAnimation(google.maps.Animation.BOUNCE);
+		});
+
+		var latlng = new google.maps.LatLng(-9.445638, 159.972900);
+		var img = new google.maps.MarkerImage('markers/haze.png');
+		var marker = new google.maps.Marker({
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		marker.addListener('click', function() {
+		var infoWindow = new google.maps.InfoWindow({map: map});
+		infoWindow.setContent('<h1><b>Honiara,Solomon Islands <img src="markers/haze.png" alt="haze"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Sat Apr 22</td><td align="center">26.45</td><td align="center">22.01</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.96</td><td align="center">4</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">27.81</td><td align="center">21.88</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">6.85</td><td align="center">4</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">28.74</td><td align="center">27.72</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.8</td><td align="center">1</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">29.16</td><td align="center">28.01</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.01</td><td align="center">7</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">29.0</td><td align="center">27.84</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.39</td><td align="center">1</td></tr><tr><td align="center">Thu Apr 27</td><td align="center">29.09</td><td align="center">27.84</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.72</td><td align="center">3</td></tr></table>');
+		infoWindow.setPosition(latlng);
+		infoWindow.open(map, this);
+		this.setAnimation(google.maps.Animation.BOUNCE);
+		});
+
+		var latlng = new google.maps.LatLng(4.859363, 31.571250);
+		var img = new google.maps.MarkerImage('markers/01d.png');
+		var marker = new google.maps.Marker({
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		marker.addListener('click', function() {
+		var infoWindow = new google.maps.InfoWindow({map: map});
+		infoWindow.setContent('<h1><b>Juba,South Sudan South Sudan <img src="markers/01d.png" alt="clear sky"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">34.46</td><td align="center">20.55</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.06</td><td align="center">8</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">33.42</td><td align="center">21.35</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.36</td><td align="center">7</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">33.99</td><td align="center">21.83</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.12</td><td align="center">7</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">30.99</td><td align="center">23.43</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">5.91</td><td align="center">7</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">26.87</td><td align="center">20.3</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">11.01</td><td align="center">4</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">31.96</td><td align="center">21.54</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.71</td><td align="center">8</td></tr></table>');
+		infoWindow.setPosition(latlng);
+		infoWindow.open(map, this);
+		this.setAnimation(google.maps.Animation.BOUNCE);
+		});
+
+		var latlng = new google.maps.LatLng(5.852036, -55.203828);
+		var img = new google.maps.MarkerImage('markers/02d.png');
+		var marker = new google.maps.Marker({
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		marker.addListener('click', function() {
+		var infoWindow = new google.maps.InfoWindow({map: map});
+		infoWindow.setContent('<h1><b>Paramaribo,Suriname <img src="markers/02d.png" alt="few clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">28.31</td><td align="center">25.04</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.1</td><td align="center">18</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">28.63</td><td align="center">25.1</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.67</td><td align="center">22</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">29.37</td><td align="center">25.67</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.28</td><td align="center">18</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">29.26</td><td align="center">25.91</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.85</td><td align="center">18</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">29.84</td><td align="center">25.62</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.25</td><td align="center">17</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">29.49</td><td align="center">25.73</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.01</td><td align="center">15</td></tr></table>');
+		infoWindow.setPosition(latlng);
+		infoWindow.open(map, this);
+		this.setAnimation(google.maps.Animation.BOUNCE);
+		});
+
+		var latlng = new google.maps.LatLng(0.330192, 6.733343);
+		var img = new google.maps.MarkerImage('markers/04d.png');
+		var marker = new google.maps.Marker({
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		marker.addListener('click', function() {
+		var infoWindow = new google.maps.InfoWindow({map: map});
+		infoWindow.setContent('<h1><b>S&#227;o Tom&#233;,S&#227;o Tom&#233; and Pr&#237;ncipe <img src="markers/04d.png" alt="broken clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">27.81</td><td align="center">24.8</td><td align="center"><img src="markers/09d.png" alt="heavy intensity rain"></td><td align="center">13.15</td><td align="center">8</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">27.66</td><td align="center">26.02</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">6.93</td><td align="center">11</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">28.84</td><td align="center">27.56</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.38</td><td align="center">14</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">27.89</td><td align="center">27.12</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">7.93</td><td align="center">8</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">27.72</td><td align="center">27.16</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.13</td><td align="center">3</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">27.81</td><td align="center">26.97</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">4.91</td><td align="center">4</td></tr></table>');
+		infoWindow.setPosition(latlng);
+		infoWindow.open(map, this);
+		this.setAnimation(google.maps.Animation.BOUNCE);
+		});
+
+		var latlng = new google.maps.LatLng(10.480594, -66.903606);
+		var img = new google.maps.MarkerImage('markers/02d.png');
+		var marker = new google.maps.Marker({
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		marker.addListener('click', function() {
+		var infoWindow = new google.maps.InfoWindow({map: map});
+		infoWindow.setContent('<h1><b>Caracas,Venezuela <img src="markers/02d.png" alt="few clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">29.66</td><td align="center">16.61</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">7.43</td><td align="center">4</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">29.48</td><td align="center">18.65</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.45</td><td align="center">5</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">32.42</td><td align="center">24.58</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.48</td><td align="center">10</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">32.61</td><td align="center">25.11</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.87</td><td align="center">9</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">33.09</td><td align="center">23.32</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.45</td><td align="center">8</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">33.34</td><td align="center">22.83</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.72</td><td align="center">10</td></tr></table>');
+		infoWindow.setPosition(latlng);
+		infoWindow.open(map, this);
+		this.setAnimation(google.maps.Animation.BOUNCE);
+		});
+
+		var latlng = new google.maps.LatLng(53.551085, 9.993682);
+		var img = new google.maps.MarkerImage('markers/04d.png');
+		var marker = new google.maps.Marker({
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		marker.addListener('click', function() {
+		var infoWindow = new google.maps.InfoWindow({map: map});
+		infoWindow.setContent('<h1><b>Hamburgo,Germany <img src="markers/04d.png" alt="broken clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">11.82</td><td align="center">5.73</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.84</td><td align="center">30</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">8.98</td><td align="center">4.76</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.95</td><td align="center">37</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">7.86</td><td align="center">4.91</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.35</td><td align="center">27</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">10.84</td><td align="center">5.03</td><td align="center"><img src="markers/09d.png" alt="moderate rain"></td><td align="center">3.52</td><td align="center">37</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">8.27</td><td align="center">2.75</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">2.12</td><td align="center">27</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">9.21</td><td align="center">4.52</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.18</td><td align="center">12</td></tr></table>');
+		infoWindow.setPosition(latlng);
+		infoWindow.open(map, this);
+		this.setAnimation(google.maps.Animation.BOUNCE);
+		});
+
+		var latlng = new google.maps.LatLng(50.064650, 19.944980);
+		var img = new google.maps.MarkerImage('markers/02d.png');
+		var marker = new google.maps.Marker({
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		marker.addListener('click', function() {
+		var infoWindow = new google.maps.InfoWindow({map: map});
+		infoWindow.setContent('<h1><b>Cracovia,Poland <img src="markers/02d.png" alt="few clouds"></b></h1><table style="width:100%"><tr><th>Date</th><th>Temp Max C</th><th>Temp Min C</th><th>Status</th><th>Rain mm</th><th>Wind km/h</th></tr><tr><td align="center">Fri Apr 21</td><td align="center">5.47</td><td align="center">-3.15</td><td align="center"><img src="markers/sky is clear.png" alt="sky is clear"></td><td align="center">0.32</td><td align="center">13</td></tr><tr><td align="center">Sat Apr 22</td><td align="center">5.05</td><td align="center">2.44</td><td align="center"><img src="markers/light snow.png" alt="light snow"></td><td align="center">3.81</td><td align="center">21</td></tr><tr><td align="center">Sun Apr 23</td><td align="center">3.16</td><td align="center">1.43</td><td align="center"><img src="markers/13d.png" alt="snow"></td><td align="center">1.7</td><td align="center">17</td></tr><tr><td align="center">Mon Apr 24</td><td align="center">9.59</td><td align="center">3.27</td><td align="center"><img src="markers/sky is clear.png" alt="sky is clear"></td><td align="center">0.51</td><td align="center">17</td></tr><tr><td align="center">Tue Apr 25</td><td align="center">15.67</td><td align="center">11.26</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">1.76</td><td align="center">28</td></tr><tr><td align="center">Wed Apr 26</td><td align="center">17.06</td><td align="center">12.72</td><td align="center"><img src="markers/04d.png" alt="light rain"></td><td align="center">0.63</td><td align="center">35</td></tr></table>');
 		infoWindow.setPosition(latlng);
 		infoWindow.open(map, this);
 		this.setAnimation(google.maps.Animation.BOUNCE);
